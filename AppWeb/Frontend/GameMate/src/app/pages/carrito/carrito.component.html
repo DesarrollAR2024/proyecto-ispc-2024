@@ -1,0 +1,63 @@
+<ng-container *ngIf="Tienda.length !=0">
+<div class="main-container">
+    <div class="card-table">
+        <div class="cart-product">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th ></th>
+                        <th colspan="2" style="padding-left: 24px;">Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th><button (click)="emptycarrito()" class="btn btn-secondary btn-lg"><i class="fas fa-trash"></i></button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let tienda of Tienda; let i = index">
+                        <td><img style="width: 150px;" src="{{tienda.imagen}}" alt=""></td>
+                        <td colspan="2">
+                            <div class="tdNombre">
+                                <span>{{tienda.nombre}}</span>
+                                <span class="tdDescripcion">{{tienda.descripcion}}</span>
+                            </div>
+                        </td>
+                        <td style="width: 12%;">$ {{tienda.precio}}</td>
+                        <td style="width: 12%;">{{tienda.cantidad + 1}}</td>
+                        <td style="width: 12%;">$ {{getProductoTotal(tienda)}}</td>
+                        <td>
+                            <button (click)="removeproducto(tienda)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                        </td>                       
+                    </tr>
+                    <tr> 
+                        <td colspan="5"> </td>
+                        <td colspan="2" style="text-align: end; padding-right: 5%;"><strong> Total: ${{grandTotal}} </strong></td> 
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+    </div>
+    <div class="d-flex w-100 justify-content-end mt-4">
+        <button (click)="mostrarPaypal()" class="btn btn-primary btn-lg">Finalizar Compra</button>
+    </div>
+</div>
+</ng-container>
+
+<div class="paypal-container" id="paypal">
+    <div #paymentRef></div>
+    <button class="btn btn-danger btn-lg" (click)="ocultarPaypal()">Cancelar Compra</button>
+</div>
+
+<ng-container *ngIf="Tienda.length ==0">
+    <div class="main-container">
+        <div class="card">
+            <h1 class="card-tittle"> Mi Carrito </h1>
+        </div>
+        <div class="center">
+            <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="image">
+            <h2> Tu Carrito Esta Vacio!</h2>
+            <h4> Agrega un Producto a Tu Carrito</h4>
+            <button routerLink="/tienda" class= "btn btn-primary">Compra Ahora</button>
+        </div>
+    </div>
+</ng-container>

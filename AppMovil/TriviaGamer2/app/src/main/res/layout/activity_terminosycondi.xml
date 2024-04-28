@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_faq"
+    tools:context="com.desarrollar.triviagamer.terminosycondi">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulotyc"
+        android:layout_width="307dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="51dp"
+        android:text="@string/t_rminos_y_condiciones"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aceptacion"
+        android:layout_width="293dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_1_aceptaci_n_de_los_t_rminos_y_condiciones"
+        android:textAlignment="center"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulotyc" />
+
+        <TextView
+            android:id="@+id/aceptaciontexto"
+            android:layout_width="360dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/al_acceder_y_utilizar_la_aplicaci_n_web_de_trivia_gamemate_el_usuario_acepta_cumplir_y_estar_sujeto_a_estos_t_rminos_y_condiciones_de_uso_si_el_usuario_no_est_de_acuerdo_con_alguno_de_los_t_rminos_aqu_establecidos_se_le_solicita_que_no_utilice_la_aplicaci_n"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aceptacion" />
+
+    <TextView
+        android:id="@+id/usodelaapp"
+        android:layout_width="143dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_2_uso_de_la_aplicacion"
+        android:textAlignment="center"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aceptaciontexto" />
+
+        <TextView
+            android:id="@+id/usodelaapptexto"
+            android:layout_width="360dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/el_usuario_debe_ser_mayor_de_16_a_os_o_contar_con_el_consentimiento_de_un_padre_o_tutor_legal_para_utilizar_la_aplicaci_n_el_usuario_se_compromete_a_utilizar_la_aplicaci_n_nicamente_para_fines_l_citos_y_de_acuerdo_con_todas_las_leyes_y_regulaciones_aplicables"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usodelaapp" />
+
+    <TextView
+        android:id="@+id/registrousuario"
+        android:layout_width="149dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_3_registro_de_usuario"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usodelaapptexto" />
+
+        <TextView
+            android:id="@+id/registrousuariotexto"
+            android:layout_width="360dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/la_aplicaci_n_requiere_que_el_usuario_se_registre_el_usuario_es_responsable_de_proporcionar_informaci_n_precisa_y_completa_durante_el_proceso_de_registro_el_usuario_es_responsable_de_mantener_la_confidencialidad_de_su_informaci_n_de_inicio_de_sesi_n_y_es_responsable_de_todas_las_actividades_que_ocurran_bajo_su_cuenta"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrousuario" />
+
+    <TextView
+        android:id="@+id/propiedad"
+        android:layout_width="160dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_4_propiedad_intelectual"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrousuariotexto" />
+
+        <TextView
+            android:id="@+id/propiedadtexto"
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/todos_los_derechos_de_propiedad_intelectual_relacionados_con_la_aplicaci_n_incluyendo_pero_no_limit_ndose_a_el_software_gr_ficos_dise_o_y_contenido_son_propiedad_de_gamemate_y_est_n_protegidos_por_las_leyes_de_propiedad_intelectual_el_usuario_no_tiene_permiso_para_copiar_modificar_distribuir_vender_o_utilizar_de_cualquier_otra_manera_los_materiales_con_derechos_de_autor_presentes_en_la_aplicaci_n_sin_el_consentimiento_expreso_de_gamemate"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/propiedad" />
+
+    <TextView
+        android:id="@+id/contenido"
+        android:layout_width="164dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_5_contenido_del_usuario"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/propiedadtexto" />
+
+        <TextView
+            android:id="@+id/contenidotexto"
+            android:layout_width="360dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/el_usuario_puede_tener_la_opci_n_de_cargar_o_enviar_contenido_a_la_aplicaci_n_al_hacerlo_el_usuario_concede_a_gamemate_una_licencia_no_exclusiva_transferible_sublicenciable_libre_de_regal_as_y_global_para_usar_dicho_contenido"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contenido" />
+
+    <TextView
+        android:id="@+id/descargo"
+        android:layout_width="211dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_6_descargo_de_responsabilidad"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenidotexto" />
+
+        <TextView
+            android:id="@+id/descargotexto"
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/la_aplicaci_n_se_proporciona_quot_tal_cual_quot_y_gamemate_no_garantiza_que_la_aplicaci_n_est_libre_de_errores_o_que_funcione_de_manera_ininterrumpida"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descargo" />
+
+    <TextView
+        android:id="@+id/limitacion"
+        android:layout_width="219dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_7_limitaci_n_de_responsabilidad"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descargotexto" />
+
+        <TextView
+            android:id="@+id/limitaciontexto"
+            android:layout_width="360dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/gamemate_ser_responsable_de_ning_n_da_o_directo_indirecto_incidental_especial_o_consecuente_que_surja_del_uso_de_la_aplicaci_n"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/limitacion" />
+
+    <TextView
+        android:id="@+id/modificaciones"
+        android:layout_width="320dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_8_modificaciones_de_los_t_rminos_y_condiciones"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/limitaciontexto" />
+
+        <TextView
+            android:id="@+id/modificacionestexto"
+            android:layout_width="360dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/gamemate_se_reserva_el_derecho_de_modificar_estos_t_rminos_y_condiciones_en_cualquier_momento_los_cambios_se_har_n_efectivos_al_publicar_la_versi_n_actualizada_en_la_aplicaci_n_se_recomienda_a_los_usuarios_revisar_regularmente_los_t_rminos_y_condiciones_para_estar_al_tanto_de_las_actualizaciones"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modificaciones" />
+
+    <TextView
+        android:id="@+id/terminacion"
+        android:layout_width="185dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_9_terminaci_n_de_la_cuenta"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modificacionestexto" />
+
+        <TextView
+            android:id="@+id/terminaciontexto"
+            android:layout_width="360dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/gamemate_se_reserva_el_derecho_de_suspender_o_cancelar_la_cuenta_de_cualquier_usuario_en_caso_de_incumplimiento_de_estos_t_rminos_y_condiciones"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/terminacion" />
+
+    <TextView
+        android:id="@+id/leyaplicable"
+        android:layout_width="118dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_10_ley_aplicable"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terminaciontexto" />
+
+        <TextView
+            android:id="@+id/leyaplicabletexto"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/estos_t_rminos_y_condiciones_se_regir_n_e_interpretar_n_de_acuerdo_con_las_leyes_de_argentina_y_cualquier_disputa_que_surja_en_relaci_n_con_estos_t_rminos_estar_sujeta_a_la_jurisdicci_n_exclusiva_de_los_tribunales_de_argentina"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leyaplicable" />
+
+    <TextView
+        android:id="@+id/contacto"
+        android:layout_width="93dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/_11_contacto"
+        android:textColor="@color/verde"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leyaplicabletexto" />
+
+        <TextView
+            android:id="@+id/contactotexto"
+            android:layout_width="360dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/si_tienes_alguna_pregunta_o_comentario_sobre_estos_t_rminos_y_condiciones_puedes_ponerte_en_contacto_con_nosotros_a_trav_s_de_gamemate_gmail_com"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contacto" />
+
+    <Button
+        android:id="@+id/btnvolvertyc1"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactotexto" />
+
+    <Button
+        android:id="@+id/btnaceptartyc"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/acepto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactotexto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

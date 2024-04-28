@@ -1,0 +1,85 @@
+{
+  "producto": [
+    {
+      "id": 1,
+      "nombre": "Remera DOOM",
+      "descripcion": "Remera con estampado de DOOM. Super comoda, hecha de 100% Algodón.",
+      "imagen": "assets/Tienda Game Mate Galeria/DOOM3.png",
+      "stock": 10,
+      "precio": "$4200",
+      "categoria": "ropa"
+    },
+    {
+      "id": 2,
+      "nombre": "Buzo Assassin's Creed",
+      "descripcion": "Buzo con estampado de Assassin's Creed. Super comodo, hecho de 100% Algodón.",
+      "imagen": "assets/Tienda Game Mate Galeria/ASSA.png",
+      "stock": 10,
+      "precio": "$8000",
+      "categoria": "ropa"
+    },
+    {
+      "id": 3,
+      "nombre": "Taza Mortal Kombat",
+      "descripcion": "Taza con motivo Mortal Kombat, hecha con la mas fina ceramica.",
+      "imagen": "assets/Tienda Game Mate Galeria/mortal2.png",
+      "stock": 10,
+      "precio": "$2200",
+      "categoria": "bazar"
+    },
+    {
+      "id": 4,
+      "nombre": "Llavero Game Mate",
+      "descripcion": "Llavero de Game Mate. Hecho con plastico super resistente.",
+      "imagen": "assets/Tienda Game Mate Galeria/game mate2.png",
+      "stock": 10,
+      "precio": "$1000",
+      "categoria": "accesorio"
+    },
+    {
+      "id": 5,
+      "nombre": "Gorra Valorant",
+      "descripcion": "Gorra con estampado de Valorant. Super comoda, hecha de 100% Algodón.",
+      "imagen": "assets/Tienda Game Mate Galeria/VALO4.png",
+      "stock": 10,
+      "precio": "$3000",
+      "categoria": "accesorio"
+    },
+    {
+      "id": 6,
+      "nombre": "Remera Street Fighters",
+      "descripcion": "Remera con estampado de Street Fighters. Super comoda, hecha de 100% Algodón.",
+      "imagen": "assets/Tienda Game Mate Galeria/STREET.png",
+      "stock": 10,
+      "precio": "$4200",
+      "categoria": "ropa"
+    },
+    {
+      "id": 7,
+      "nombre": "Llavero Stray",
+      "descripcion": "Llavero de Stray. Hecho con plastico super resistente.",
+      "imagen": "assets/Tienda Game Mate Galeria/stray2.png",
+      "stock": 10,
+      "precio": "$1000",
+      "categoria": "accesorio"
+    },
+    {
+      "id": 8,
+      "nombre": "Buzo Counter Strike",
+      "descripcion": "Buzo con estampado de Counter Strike. Super comodo, hecho de 100% Algodón.",
+      "imagen": "assets/Tienda Game Mate Galeria/CS.png",
+      "stock": 10,
+      "precio": "$8000",
+      "categoria": "ropa"
+    },
+    {
+      "id": 9,
+      "nombre": "Taza Valorant",
+      "descripcion": "Taza con motivo Valorant, hecha con la mas fina ceramica.",
+      "imagen": "assets/Tienda Game Mate Galeria/VALO.png",
+      "stock": 10,
+      "precio": "$2200",
+      "categoria": "bazar"
+    }
+  ]
+}

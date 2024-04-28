@@ -1,0 +1,86 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    background-color: none  ;
+} 
+
+.navbar .navbar-nav .nav-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar .navbar-nav .nav-item {
+    display: inline-block;
+
+}
+
+.navbar .navbar-nav .nav-item a,
+.navbar .navbar-nav .nav-item button {
+    font-family: var(--fuente-primaria);
+    color: aliceblue;
+}
+
+.navbar .navbar-nav .nav-item a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    background-color: fuchsia;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.logo{
+    padding: 10px;
+    width:150px;
+}
+
+#navbarSupportedContent{
+    width: 200px;
+}
+
+.boton-header {
+    position: relative;
+    align-items: top;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.1s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-header:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.5s;
+}
+
+.boton-header span {
+    position: absolute;
+}
+
+.carrito{
+    font-size: 25px;
+    padding-left: 50px;
+}

@@ -1,0 +1,43 @@
+.container {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-header {
+    background-color: #17a2b8;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+  }
+
+  .card-title {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .purchase-id {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }

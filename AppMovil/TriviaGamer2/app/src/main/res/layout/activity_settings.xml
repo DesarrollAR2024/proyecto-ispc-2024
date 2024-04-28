@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context="com.desarrollar.triviagamer.Settings">
+
+
+    <LinearLayout
+        android:background="#ECE6E6"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:layout_width="match_parent"
+                android:background="@color/lila"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Ajustes"
+                    android:textColor="#fff"
+                    android:textSize="35sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Pfrecuentes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:padding="20dp"
+                    android:text="Preguntas Frecuentes"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></Button>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@drawable/shadow"
+                android:layout_height="5dp">
+
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Tcondiciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:padding="20dp"
+                    android:text="Terminos y Condiciones"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></Button>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@drawable/shadow"
+                android:layout_height="5dp">
+
+            </View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:padding="20dp"
+                    android:text="Contacto"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"></Button>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@drawable/shadow"
+                android:layout_height="5dp">
+
+            </View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/music_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:text="Musica"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:padding="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_height="match_parent">
+                    <Switch
+                        android:id="@+id/music_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="viewClickHandler"
+                        android:layout_height="wrap_content">
+                    </Switch>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="137dp"
+                android:background="@color/lila"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp">
+
+                <Button
+                    android:id="@+id/bt_settings"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/default_button_bg"
+                    android:padding="15dp"
+                    android:text="Volver al Juego"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>
