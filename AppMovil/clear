@@ -1,0 +1,247 @@
+[33mcommit c7f3cf716bde9e1655984c17e3ce71c001778b9e[m[33m ([m[1;36mHEAD -> [m[1;32mmatiaspedraza[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: Triana Devia <trianadevia@gmail.com>
+Date:   Sun Oct 22 21:44:59 2023 -0300
+
+    Agrego control de sonido y categorias
+
+[33mcommit 99ba19f30c8a40fe33422664df8d740c51654cdb[m
+Author: matiasp23 <matiaspedraza023@gmail.com>
+Date:   Sat Oct 14 22:28:20 2023 -0300
+
+    se agregan nueva modificación al login y registro
+
+[33mcommit ed736366b7e31c5674ce5685e241dc07b91dc451[m
+Author: matiasp23 <matiaspedraza023@gmail.com>
+Date:   Sat Oct 14 22:18:20 2023 -0300
+
+    Aceptar la conversion de EOL LF a CRLF
+
+[33mcommit 93f78deb6edfccc17ef3a8aa2c891a069bc87839[m
+Merge: 18f6f32 e0669ae
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Sat Oct 14 05:01:51 2023 -0300
+
+    Merge pull request #94 from matiasp23/karenpigni
+    
+    vista "acerca de" y registro
+
+[33mcommit e0669aeaee3da10232dfc0d7430e032173e27d87[m
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Sat Oct 14 04:57:24 2023 -0300
+
+    Se agrega vista acerca
+
+[33mcommit 7eb95e13382d6da2628f5ca713d160a74d4dce51[m
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Sat Oct 14 02:48:17 2023 -0300
+
+    Se agrega registro V1
+
+[33mcommit a4976795de1479178cc744e32fd934532f441c10[m
+Merge: 991a6d3 18f6f32
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Fri Oct 13 23:12:47 2023 -0300
+
+    Merge pull request #93 from matiasp23/develop
+    
+    Develop
+
+[33mcommit 18f6f325f6e3e5832d18fa503a2ea846ad927b5d[m
+Author: Deborat Ayala <deboratayala@gmail.com>
+Date:   Thu Oct 12 19:45:05 2023 -0300
+
+    menu,vista preguntas,arreglo errores
+
+[33mcommit 342e01adbe11fdbadebc66ef9ea3ca5cfb026c7b[m
+Merge: b751b8c b0ba439
+Author: jésica ortiz <83972686+jesicaortiz@users.noreply.github.com>
+Date:   Wed Oct 11 19:42:16 2023 -0300
+
+    Merge pull request #92 from matiasp23/jesicaortiz
+    
+    arreglo de errores en imágenes
+
+[33mcommit b0ba4391dc8c6be0eedd3de87407f6044228034b[m
+Author: jesica <jesicaortiz15@outlook.com>
+Date:   Wed Oct 11 19:37:02 2023 -0300
+
+    arreglo de errores en imágenes
+
+[33mcommit 1bff9c278de84c4f87a973bbfa3b7823215b7f28[m
+Merge: c02e573 b751b8c
+Author: jésica ortiz <83972686+jesicaortiz@users.noreply.github.com>
+Date:   Wed Oct 11 16:56:07 2023 -0300
+
+    Merge pull request #90 from matiasp23/develop
+    
+    traigo cambios a mi rama
+
+[33mcommit b751b8cf376bc78fa4e6547460945d1faf741eb0[m
+Merge: 19d1ae3 991a6d3
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Mon Oct 9 01:52:48 2023 -0300
+
+    Merge pull request #88 from matiasp23/karenpigni
+    
+    Karenpigni
+
+[33mcommit 991a6d35e56cfb339e6b2f59aa1d543f8984a001[m
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Mon Oct 9 01:52:13 2023 -0300
+
+    se optimizó la tabla sql y el DER
+
+[33mcommit 6c855068d4a2a408d06639b75dbfebd081873ed7[m
+Merge: 9ff6785 19d1ae3
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Mon Oct 9 01:50:29 2023 -0300
+
+    Merge pull request #87 from matiasp23/develop
+    
+    Develop
+
+[33mcommit 9ff67851ccdb0d685aad6245b8ba869a86acd92d[m
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Mon Oct 9 01:49:14 2023 -0300
+
+    se optimizó la tabla sql y el DER
+
+[33mcommit 19d1ae346b864e72763d0b64047f44ce2003ecab[m
+Merge: 3558366 f948c2e
+Author: Triana Devia <trianadevia@gmail.com>
+Date:   Sat Oct 7 10:15:01 2023 -0300
+
+    Merge branch 'develop' of https://github.com/matiasp23/proyecto-app-movil-ispc-2023 into develop
+
+[33mcommit 3558366b8f1c8dc6ea53d882cccb80da192caddb[m
+Author: Triana Devia <trianadevia@gmail.com>
+Date:   Sat Oct 7 10:08:44 2023 -0300
+
+    Modifico activitys, mejorando diseño
+
+[33mcommit f948c2e552476fee54560f43febe1e2026b7f12c[m
+Merge: 8efe308 35653e9
+Author: matiasp23 <matiaspedraza023@gmail.com>
+Date:   Thu Oct 5 23:49:28 2023 -0300
+
+    Merge branch 'develop' of https://github.com/matiasp23/proyecto-app-movil-ispc-2023 into develop
+
+[33mcommit 8efe30809c59a6e065f485ddfe8e79c8ff301bfa[m
+Author: matiasp23 <matiaspedraza023@gmail.com>
+Date:   Thu Oct 5 23:48:56 2023 -0300
+
+    se modifica vista preguntas frecuentes y perfil
+
+[33mcommit 35653e931f9e3ca7ede1ff987419f03089756e8a[m
+Merge: 721d45b c02e573
+Author: jésica ortiz <83972686+jesicaortiz@users.noreply.github.com>
+Date:   Thu Oct 5 19:31:40 2023 -0300
+
+    Merge pull request #85 from matiasp23/jesicaortiz
+    
+    modificación de vistas home y bienvenida
+
+[33mcommit c02e5737fc115834b9abfeb74b0c89cced69a375[m
+Author: jesica <jesicaortiz15@outlook.com>
+Date:   Thu Oct 5 19:29:13 2023 -0300
+
+    nuevo maquetado de vistas bienvenida y home
+
+[33mcommit 08122555bd75e6d604d0ccb096ade8bd36f080aa[m
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Wed Oct 4 01:28:54 2023 -0300
+
+    Se actualiza SQL scripts y DER
+
+[33mcommit 38019324c8a74e9a8ccc63974fd8b42ff3cf5af0[m
+Merge: ba2cdb7 721d45b
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Wed Oct 4 01:27:58 2023 -0300
+
+    Merge branch 'develop' into karenpigni
+
+[33mcommit 721d45b72211795fa05e37a9e237afbd9f4fa780[m
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Wed Oct 4 01:27:08 2023 -0300
+
+    Se actualiza SQL scripts y DER
+
+[33mcommit 71e1a5d714f4dab4f2438cd68e9ddbd8c7bdc39b[m
+Merge: bc73ca7 d0f463f
+Author: jésica ortiz <83972686+jesicaortiz@users.noreply.github.com>
+Date:   Mon Oct 2 16:14:38 2023 -0300
+
+    Merge pull request #84 from matiasp23/main
+    
+    actualizando rama personal
+
+[33mcommit 7975a475305dbef53f13b3719a8ef68fe9b51cd7[m
+Merge: 5ec8538 d0f463f
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Sun Oct 1 22:01:34 2023 -0300
+
+    Merge pull request #83 from matiasp23/main
+    
+    Develop
+
+[33mcommit d0f463fd9c2194d560c69aa3c39158a92b01e980[m
+Author: Karen Pigni <64334155+Karen-Pigni@users.noreply.github.com>
+Date:   Sun Oct 1 21:15:54 2023 -0300
+
+    actualización del doc830
+
+[33mcommit ade51dc15c496fea6549094e228fe1d7ff818fb5[m
+Merge: 5ec8538 0e1e41e
+Author: Deborat Ayala <deboratayala@gmail.com>
+Date:   Sun Oct 1 20:18:04 2023 -0300
+
+    Merge branch 'main' of https://github.com/matiasp23/proyecto-app-movil-ispc-2023
+
+[33mcommit 5ec85381f351dd5fc4d7ed8a995968bd5c2f5bb2[m
+Author: Deborat Ayala <deboratayala@gmail.com>
+Date:   Sun Oct 1 19:58:30 2023 -0300
+
+    modifico flecha volver
+
+[33mcommit a7184debc9fec4a2be36e5b477ebf321c66f9e0e[m
+Merge: ef28da5 e4334b2
+Author: Marcelo Rojas <108030104+PsicoDevil@users.noreply.github.com>
+Date:   Sun Oct 1 19:22:23 2023 -0300
+
+    Merge pull request #82 from matiasp23/marcelorojas
+    
+     se crea una salida para el boton de contacto, y una finalizacion par…
+
+[33mcommit e4334b21dcfac622c5432b51a6e50b0a099edd10[m[33m ([m[1;31morigin/marcelorojas[m[33m)[m
+Author: Marcelo Rojas <108030104+PsicoDevil@users.noreply.github.com>
+Date:   Sun Oct 1 19:20:39 2023 -0300
+
+     se crea una salida para el boton de contacto, y una finalizacion para Ayuda, volver para TyC, y volver para Preguntas Frecuentes
+
+[33mcommit ef28da5e46da48a626253e154ee11dd1cb25a67b[m
+Author: matiasp23 <matiaspedraza023@gmail.com>
+Date:   Sun Oct 1 17:03:06 2023 -0300
+
+    actualizacion de TriviaGamer2/gradle/caches/journal-1/journal-1.lock
+
+[33mcommit 61493c827a39b8f6e3095a2eda1e8f5438914346[m
+Merge: 8106493 12a652d
+Author: matiasp23 <matiaspedraza023@gmail.com>
+Date:   Sun Oct 1 16:59:04 2023 -0300
+
+    Merge branch 'develop' of https://github.com/matiasp23/proyecto-app-movil-ispc-2023 into develop
+
+[33mcommit 8106493156780363f3a138c387908d3deb6e0183[m
+Author: matiasp23 <matiaspedraza023@gmail.com>
+Date:   Sun Oct 1 16:36:36 2023 -0300
+
+    actualizando joutnal.-1-lok
+
+[33mcommit 2610b65ce9510d4adb255633fb9bf1ec2635bea8[m
+Author: matiasp23 <matiaspedraza023@gmail.com>
+Date:   Sun Oct 1 16:35:15 2023 -0300
+
+    actualizacion gradle
+
+[33mcommit 12a652df4ac7f5eeb7244426de2200a7bd3a0342[m
+Author: Marcelo Rojas <108030104+PsicoDevil@users.noreply.
