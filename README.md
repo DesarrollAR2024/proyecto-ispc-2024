@@ -7,7 +7,7 @@ Desarrollado por DesarrollAR
 
 Game Mate es un proyecto integral que abarca tanto una aplicación móvil como una página web, ambos diseñados para brindar una experiencia completa a los amantes de los videojuegos.
 
-# Game Mate: La Aplicación Móvil
+# Game Mate: [La Aplicación Móvil](https://github.com/matiasp23/proyecto-app-movil-ispc-2023.git)
 
 La aplicación móvil Game Mate es una herramienta esencial para los amantes de los juegos, permitiendo explorar y disfrutar de una amplia variedad de desafíos y preguntas relacionadas con el mundo de los videojuegos. Desde preguntas sobre títulos icónicos hasta desafíos temáticos, los usuarios podrán poner a prueba sus conocimientos y disfrutar de una experiencia de aprendizaje divertida y estimulante en el universo gamer.
 
@@ -19,7 +19,7 @@ Preguntas Interactivas: Preguntas con imágenes, videos y opciones múltiples pa
 Sistema de Puntaje: Acumulación de puntos para medir el progreso y competir con amigos.
 Perfil de Usuario: Personalización del perfil para guardar el progreso y estadísticas.
 
-# Game Mate: La Página Web
+# Game Mate: [La Página Web](https://github.com/TrianaDevia/Game-Mate-Modulo-Programador-Web-2023)
 
 La página web Game Mate complementa la aplicación móvil, ofreciendo un espacio virtual donde los gamers pueden expandir su experiencia y conectar con la comunidad.
 

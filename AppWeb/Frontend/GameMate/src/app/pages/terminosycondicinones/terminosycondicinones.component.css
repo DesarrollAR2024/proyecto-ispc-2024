@@ -1,0 +1,33 @@
+.terminos {
+    background-color: transparent;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 5%;
+}
+
+.terminos p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.terminos h2 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.terminos h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}

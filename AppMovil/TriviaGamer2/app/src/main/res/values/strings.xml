@@ -1,0 +1,81 @@
+<resources>
+    <!--HOME-->
+    <string name="app_name">TriviaGamer</string>
+    <string name="Text_home">ELIGE TU MODO DE JUEGO</string>
+    <string name="text_logo">TRIVIA GAMER</string>
+    <string name="btn_1">TUTORIAL</string>
+    <string name="btn_2">FACIL</string>
+    <string name="btn_3">INTERMEDIO</string>
+    <string name="btn_4">DIFICIL</string>
+    <!---->
+    <string name="text_hel">Preguntas Frecuentes</string>
+    <string name="text_bienvenida">Bienvenido a </string>
+    <string name="btn_login">INICIAR SESION</string>
+    <string name="btn_registro">REGISTRATE</string>
+    <!--PREGUNTA 1-->
+    <string name="pregunta">PREGUNTA 1</string>
+    <string name="pregunta_txt">¿Quién es la madre de Kitana en Mortal Kombat?</string>
+    <string name="respuesta_a">A. Sindel</string>
+    <string name="respuesta_b">B. Milena</string>
+    <string name="respuesta_c">C. Sonya</string>
+    <string name="respuesta_d">D. Nitara</string>
+    <string name="boton_pregunta1">Siguiente</string>
+    <!--PUNTAJE-->
+    <string name="score">SCORE</string>
+    <string name="score_txt">Tu puntaje es ...</string>
+    <string name="puntaje">10</string>
+    <string name="boton_puntaje">Siguiente</string>
+    <!--RESULTADO CORRECTO-->
+    <string name="respuesta_correcta_1">RESPUESTA</string>
+    <string name="respuesta_correcta_2">CORRECTA</string>
+    <string name="puntaje_adicion">+1</string>
+    <string name="boton_respuesta_correcta">Siguiente</string>
+    <!--RESULTADO INCORRECTO-->
+    <string name="titulo_respuesta_incorrecta">RESPUESTA</string>
+
+
+    <string name="boton_respuesta_incorrecta">" Siguiente "</string>
+    <string name="_2_uso_de_la_aplicacion">2.Uso de la Aplicacion</string>
+    <string name="al_acceder_y_utilizar_la_aplicaci_n_web_de_trivia_gamemate_el_usuario_acepta_cumplir_y_estar_sujeto_a_estos_t_rminos_y_condiciones_de_uso_si_el_usuario_no_est_de_acuerdo_con_alguno_de_los_t_rminos_aqu_establecidos_se_le_solicita_que_no_utilice_la_aplicaci_n">Al acceder y utilizar la aplicación web de trivia (GameMate), el usuario acepta cumplir y estar sujeto a estos Términos y Condiciones de uso. Si el usuario no está de acuerdo con alguno de los términos aquí establecidos, se le solicita que no utilice la aplicación.</string>
+    <string name="_1_aceptaci_n_de_los_t_rminos_y_condiciones">1.Aceptación de los términos y condiciones</string>
+    <string name="el_usuario_debe_ser_mayor_de_16_a_os_o_contar_con_el_consentimiento_de_un_padre_o_tutor_legal_para_utilizar_la_aplicaci_n_el_usuario_se_compromete_a_utilizar_la_aplicaci_n_nicamente_para_fines_l_citos_y_de_acuerdo_con_todas_las_leyes_y_regulaciones_aplicables">El usuario debe ser mayor de 16 años o contar con el consentimiento de un padre o tutor legal para utilizar la aplicación. El usuario se compromete a utilizar la aplicación únicamente para fines lícitos y de acuerdo con todas las leyes y regulaciones aplicables.</string>
+    <string name="_3_registro_de_usuario">3. Registro de Usuario</string>
+    <string name="la_aplicaci_n_requiere_que_el_usuario_se_registre_el_usuario_es_responsable_de_proporcionar_informaci_n_precisa_y_completa_durante_el_proceso_de_registro_el_usuario_es_responsable_de_mantener_la_confidencialidad_de_su_informaci_n_de_inicio_de_sesi_n_y_es_responsable_de_todas_las_actividades_que_ocurran_bajo_su_cuenta">La aplicación requiere que el usuario se registre. El usuario es responsable de proporcionar información precisa y completa durante el proceso de registro. El usuario es responsable de mantener la confidencialidad de su información de inicio de sesión y es responsable de todas las actividades que ocurran bajo su cuenta.</string>
+    <string name="_4_propiedad_intelectual">4. Propiedad Intelectual</string>
+    <string name="todos_los_derechos_de_propiedad_intelectual_relacionados_con_la_aplicaci_n_incluyendo_pero_no_limit_ndose_a_el_software_gr_ficos_dise_o_y_contenido_son_propiedad_de_gamemate_y_est_n_protegidos_por_las_leyes_de_propiedad_intelectual_el_usuario_no_tiene_permiso_para_copiar_modificar_distribuir_vender_o_utilizar_de_cualquier_otra_manera_los_materiales_con_derechos_de_autor_presentes_en_la_aplicaci_n_sin_el_consentimiento_expreso_de_gamemate">Todos los derechos de propiedad intelectual relacionados con la aplicación (incluyendo, pero no limitándose a, el software, gráficos, diseño y contenido) son propiedad de GameMate y están protegidos por las leyes de propiedad intelectual. El usuario no tiene permiso para copiar, modificar, distribuir, vender o utilizar de cualquier otra manera los materiales con derechos de autor presentes en la aplicación sin el consentimiento expreso de GameMate.</string>
+    <string name="_5_contenido_del_usuario">5. Contenido del Usuario</string>
+    <string name="el_usuario_puede_tener_la_opci_n_de_cargar_o_enviar_contenido_a_la_aplicaci_n_al_hacerlo_el_usuario_concede_a_gamemate_una_licencia_no_exclusiva_transferible_sublicenciable_libre_de_regal_as_y_global_para_usar_dicho_contenido">El usuario puede tener la opción de cargar o enviar contenido a la aplicación. Al hacerlo, el usuario concede a GameMate una licencia no exclusiva, transferible, sublicenciable, libre de regalías y global para usar dicho contenido.</string>
+    <string name="_6_descargo_de_responsabilidad">6. Descargo de Responsabilidad</string>
+    <string name="la_aplicaci_n_se_proporciona_quot_tal_cual_quot_y_gamemate_no_garantiza_que_la_aplicaci_n_est_libre_de_errores_o_que_funcione_de_manera_ininterrumpida">La aplicación se proporciona \"tal cual\" y GameMate no garantiza que la aplicación esté libre de errores o que funcione de manera ininterrumpida.</string>
+    <string name="_7_limitaci_n_de_responsabilidad">7. Limitación de Responsabilidad</string>
+    <string name="_7_1_gamemate_no_ser_responsable_de_ning_n_da_o_directo_indirecto_incidental_especial_o_consecuente_que_surja_del_uso_de_la_aplicaci_n">7.1. GameMate no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que surja del uso de la aplicación.</string>
+    <string name="_8_modificaciones_de_los_t_rminos_y_condiciones">8. Modificaciones de los Términos y Condiciones</string>
+    <string name="_8_1_gamemate_se_reserva_el_derecho_de_modificar_estos_t_rminos_y_condiciones_en_cualquier_momento_los_cambios_se_har_n_efectivos_al_publicar_la_versi_n_actualizada_en_la_aplicaci_n_se_recomienda_a_los_usuarios_revisar_regularmente_los_t_rminos_y_condiciones_para_estar_al_tanto_de_las_actualizaciones">8.1. GameMate se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios se harán efectivos al publicar la versión actualizada en la aplicación. Se recomienda a los usuarios revisar regularmente los Términos y Condiciones para estar al tanto de las actualizaciones.</string>
+    <string name="_9_terminaci_n_de_la_cuenta">9. Terminación de la Cuenta</string>
+    <string name="_9_1_gamemate_se_reserva_el_derecho_de_suspender_o_cancelar_la_cuenta_de_cualquier_usuario_en_caso_de_incumplimiento_de_estos_t_rminos_y_condiciones">9.1. GameMate se reserva el derecho de suspender o cancelar la cuenta de cualquier usuario en caso de incumplimiento de estos Términos y Condiciones.</string>
+    <string name="_10_ley_aplicable">10. Ley Aplicable</string>
+    <string name="_10_1_estos_t_rminos_y_condiciones_se_regir_n_e_interpretar_n_de_acuerdo_con_las_leyes_de_argentina_y_cualquier_disputa_que_surja_en_relaci_n_con_estos_t_rminos_estar_sujeta_a_la_jurisdicci_n_exclusiva_de_los_tribunales_de_argentina">10.1. Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes de Argentina y cualquier disputa que surja en relación con estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de Argentina.</string>
+    <string name="_11_contacto">11. Contacto</string>
+    <string name="volver">Volver</string>
+    <string name="acepto">Acepto</string>
+    <string name="t_rminos_y_condiciones">TÉRMINOS Y CONDICIONES</string>
+    <string name="gamemate_ser_responsable_de_ning_n_da_o_directo_indirecto_incidental_especial_o_consecuente_que_surja_del_uso_de_la_aplicaci_n">GameMate ser responsable de ningún daño directo indirecto incidental especial o consecuente que surja del uso de la aplicación.</string>
+    <string name="gamemate_se_reserva_el_derecho_de_modificar_estos_t_rminos_y_condiciones_en_cualquier_momento_los_cambios_se_har_n_efectivos_al_publicar_la_versi_n_actualizada_en_la_aplicaci_n_se_recomienda_a_los_usuarios_revisar_regularmente_los_t_rminos_y_condiciones_para_estar_al_tanto_de_las_actualizaciones">GameMate se reserva el derecho de modificar estos términos y condiciones en cualquier momento los cambios se harán efectivos al publicar la versión actualizada en la aplicación se recomienda a los usuarios revisar regularmente los términos y condiciones para estar al tanto de las actualizaciones.</string>
+    <string name="estos_t_rminos_y_condiciones_se_regir_n_e_interpretar_n_de_acuerdo_con_las_leyes_de_argentina_y_cualquier_disputa_que_surja_en_relaci_n_con_estos_t_rminos_estar_sujeta_a_la_jurisdicci_n_exclusiva_de_los_tribunales_de_argentina">Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes de Argentina y cualquier disputa que surja en relación con estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de argentina.</string>
+    <string name="si_tienes_alguna_pregunta_o_comentario_sobre_estos_t_rminos_y_condiciones_puedes_ponerte_en_contacto_con_nosotros_a_trav_s_de_gamemate_gmail_com">Si tienes alguna pregunta o comentario sobre estos términos y condiciones puedes ponerte en contacto con nosotros a través de gamemate@gmail.com.</string>
+    <string name="gamemate_se_reserva_el_derecho_de_suspender_o_cancelar_la_cuenta_de_cualquier_usuario_en_caso_de_incumplimiento_de_estos_t_rminos_y_condiciones">GameMate se reserva el derecho de suspender o cancelar la cuenta de cualquier usuario en caso de incumplimiento de estos términos y condiciones.</string>
+
+    <string name="puntaje_resultado_incorrecto">-1</string>
+    <string name="titulo_respuesta_incorrecta2">INCORRECTA</string>
+
+    <!-- PREGUNTAS-->
+    <string name="preguntavista">Aca va la pregunta</string>
+    <string name="opcion1">opcion1</string>
+    <string name="opcion2">opcion2</string>
+    <string name="opcion3">opcion3</string>
+    <string name="opcion4">opcion4</string>
+    <string name="numeropreg"> 1/5 </string>
+    <string name="rankItemScore_placeholder" />
+
+
+</resources>

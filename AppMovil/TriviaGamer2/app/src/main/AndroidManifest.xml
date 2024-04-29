@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".Settings" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".Result" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PlayScreen" />
+        <activity android:name=".Ranking" />
+        <activity android:name=".Contacto" />
+        <activity android:name=".Preguntas_Frecuentes" />
+        <activity android:name=".terminosycondi" />
+        <activity android:name=".EditUserActivity" />
+        <activity android:name=".CreateUserActivity" />
+        <activity android:name=".UserListActivity" />
+        <activity android:name=".AdminActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

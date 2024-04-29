@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --fuente-primaria: 'Orbitron', sans-serif;
+    --fuente-segundaria: monospace, sans-serif;
+    --primario: #19122F;
+    --blanco: #FFFFFF;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-segundaria);
+    font-size: 1.6rem;
+    color: var(--blanco);
+    line-height: 2;
+    background-color: var(--primario);
+}
+.nosotros__imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 1400px;
+    margin-top: 20px;
+  }

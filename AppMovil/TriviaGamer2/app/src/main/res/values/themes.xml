@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TriviaGamer" parent="">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="Theme.LogSignSQLPractice" parent="">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="android:textColorPrimary">@color/lavender</item>
+        <item name="android:colorPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorButtonNormal">@color/teal_200</item>
+        <item name="android:colorSecondary">@color/teal_700</item>
+        <item name="color">@color/black</item>
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.TriviaGamer" parent="Base.Theme.TriviaGamer" />
+
+</resources>
