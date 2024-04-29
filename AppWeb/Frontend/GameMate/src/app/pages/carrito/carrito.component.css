@@ -1,0 +1,134 @@
+.paypal-container {
+    display:none;
+    visibility: hidden;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem 20% 0 20%;
+    height: 0;
+    width: 0;
+}
+
+.show {
+    height: auto;
+    width: auto;
+    visibility: visible;
+    display: block;
+}
+.card {
+    height: 60vh;
+    margin: 25px;
+    padding: 25px;
+}
+.main-container {
+    background-color: #19122F;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.center img {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 162px;
+    width: 250px;
+    margin: 20px 0px;
+}
+
+.table {
+    color:white;
+    margin-bottom: 0;
+}
+
+.table tr td img {
+    width: 150px;
+    border-radius: 16%;
+    
+}
+
+.table tr td .tdNombre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 150px;
+    padding: 4px 24px;
+}
+
+.table tr td .tdNombre .tdDescripcion{
+    font-size: 0.8em;
+    letter-spacing: 0.2px;
+}
+
+.table tbody tr {
+    border: none;
+}
+
+.table * {
+    border-width: 0;
+}
+
+.table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.table tbody tr:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h4 {
+    font-weight: 400;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2 , h4{
+    color: black;
+    font-family: var(--fuente-segundaria)
+}
+h1{
+    font-family: var(--fuente-primaria);
+}
+
+
+
+
+.card-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.center .btn {
+    font-size: 14px !important;
+    margin-top: 20px !important;
+    font-weight: 400;
+    padding: 12px 72px;
+    border-radius: 3px !important;
+}
+
+#form-checkout {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .container {
+    height: 18px;
+    display: inline-block;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    padding: 1px 2px;
+  }

@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Producto</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="tienda.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion del Producto</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="tienda.descripcion" required>
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock del Producto</label>
+                    <input type="number" class="form-control" id="stock" name="stock" [(ngModel)]="tienda.stock" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio del Producto</label>
+                    <input type="number" class="form-control" id="precio" name="precio" [(ngModel)]="tienda.precio" required>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria</label>
+                    <input type="text" class="form-control" id="categoria" name="categoria" [(ngModel)]="tienda.categoria" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagen">Imagen</label>
+                    <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="tienda.imagen" required>
+                </div>
+                <button class="btn btn-primary">
+                    Modificar Producto
+                </button>
+                <button (click)="cancelar" class="btn btn-secondary">
+                    Cancelar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_faq"
+    tools:context="com.desarrollar.triviagamer.Preguntas_Frecuentes">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="307dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="51dp"
+            android:text=" PREGUNTAS FRECUENTES"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:text="¿Cómo puedo registrarme en la aplicación?"
+            android:textColor="@color/verde"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="360dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:text="Para registrarte en nuestra aplicación, simplemente selecciona la opción REGISTRARME en la pantalla de inicio. Luego, sigue las instrucciones para completar el proceso."
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:text="¿Necesito registrarme para jugar a las trivias?"
+            android:textColor="@color/verde"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Si debes estar registrado e iniciar sesión para acceder a nuestras trivias."
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:text="¿Hay distintos niveles de dificultad en las trivias?"
+            android:textColor="@color/verde"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Si, nuestras trivias están divididas en distintos niveles de dificultad para que puedas poner a prueba tus conocimientos según el nivel que poseas."
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:text="¿Cómo puedo restablecer mi contraseña si la olvido?"
+            android:textColor="@color/verde"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Si olvidas tu contraseña ve a la pantalla de inicio y selecciona la leyenda ¿Olvidaste tu contraseña?"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="¿Qué hago si tengo un problema técnico?"
+            android:textColor="@color/verde"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="No dudes en visitar nuestra sección de contacto por cualquier otra consulta"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <Button
+        android:id="@+id/buttonvolverfaq"
+        android:layout_width="147dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="112dp"
+        android:background="@drawable/default_button_bg"
+        android:padding="10dp"
+        android:text="Volver"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
