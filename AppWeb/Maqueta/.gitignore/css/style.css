@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pie {
+    background-color: #19122F;
+    font-family: 'Orbitron', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+
+}
+
+.nombre {
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #4CE9F3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img {
+    width: 24px;
+    height: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: hwb(254 7% 82%);
+    padding: 8px 12px 8px 16px;
+    align-items: center;
+}
+
+.section {
+    font-family: 'Press Start 2P';
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 8px;
+    font-size: 14px ;
+}
+
+.section div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 0;
+}
+
+div.redes {
+    display: flex;
+}
+
+div.redes div.grupo-redes {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div.redes a {
+    margin: 0 4px;
+}
+
+.derechos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 16px;
+    padding-bottom: 4px;
+    color: gray;
+    font-size: 10px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .section div,
+    .derechos div{
+        width: 50%;
+        margin-bottom: 30px;
+        padding-left: 10px;
+    }
+}
+@media(max-width: 574px){
+    .section div,
+    .derechos div{
+        width: 100%;
+        padding-left: 10px;
+        align-items: column;
+    }
+}
+@media(max-width: 500px){
+    div.redes {
+        flex-direction: column;
+    }
+}

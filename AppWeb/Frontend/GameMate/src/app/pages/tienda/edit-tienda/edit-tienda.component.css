@@ -1,0 +1,12 @@
+.form-group{
+    margin: 10px;
+}
+
+div{
+    background-color: #0000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+}

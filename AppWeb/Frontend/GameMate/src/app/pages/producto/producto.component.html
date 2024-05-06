@@ -1,0 +1,43 @@
+<div class="contenedor">
+  <div class="item">
+    <figure>
+      <h1>{{ producto.nombre }}</h1>
+
+      <div class="camisa">
+        <img
+          class="camisa__imagen"
+          src="{{ producto.imagen }}"
+          alt="Imagen del Producto"
+        />
+
+        <div class="camisa__contenido">
+          <p>{{ producto.descripcion }}</p>
+
+          <p>Precio: ${{ producto.precio }}  |  Stock: {{producto.stock}}</p>
+
+          <form class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected>-- Seleccionar Talla --</option>
+              <option>Chica</option>
+              <option>Mediana</option>
+              <option>Grande</option>
+            </select>
+            <input
+              class="formulario__campo"
+              type="number"
+              placeholder="Cantidad"
+              min="1"
+              max="{{producto.stock}}"
+            />
+            <input
+              routerLink="/tienda/"
+              class="formulario__submit"
+              type="submit"
+              value= "Volver a la Tienda" 
+            />
+          </form>
+        </div>
+      </div>
+    </figure>
+  </div>
+</div>
