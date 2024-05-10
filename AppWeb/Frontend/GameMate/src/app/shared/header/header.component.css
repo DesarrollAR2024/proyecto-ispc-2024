@@ -155,7 +155,17 @@
     padding: 15px 10px;
     cursor: pointer;
 }
-
+.admin-bar {
+    background: red;
+    width: 150px;
+    font-size: 14px;
+    border-radius: 0 0 16px 16px;
+    position: fixed;
+    top: 0;
+    left: calc(50vw - 75px);
+    text-align: center;
+    z-index: 999;
+}
 
 
 

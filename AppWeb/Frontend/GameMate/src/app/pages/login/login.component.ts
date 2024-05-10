@@ -4,6 +4,7 @@ import { LoginUsuario } from 'app/model/Login';
 import { AuthService } from 'app/service/auth.service';
 import { TokenService } from 'app/service/token.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { from } from 'rxjs';
 
 
 @Component({
@@ -62,6 +63,7 @@ export class LoginComponent implements OnInit {
       this.tokenService.setToken(data.token);
       this.tokenService.setUserName(data.nombreUsuario);
       this.tokenService.setAuthorities(data.authorities);
+      this.tokenService.setAdmin(data.is_admin);
       this.roles = data.authorities;
       window.location.replace('');
       this.router.navigate(['']);

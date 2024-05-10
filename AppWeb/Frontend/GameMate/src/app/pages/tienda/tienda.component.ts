@@ -15,6 +15,7 @@ export class TiendaComponent {
 
   constructor(private tiendaS: TiendaService, private tokenService: TokenService, private carritoService: CarritoService) { }
   isLogged = false;
+  isAdmin =false;
 
   ngOnInit(): void {
     this.getTienda();
@@ -23,6 +24,9 @@ export class TiendaComponent {
     } else {
       this.isLogged = false;
     }
+
+      this.isAdmin=this.tokenService.getAdmin();
+
     if (this.TiendaList) {
       this.TiendaList.forEach((a: any) => {
         Object.assign(a, { cantidad: 1, total: a.precio });
