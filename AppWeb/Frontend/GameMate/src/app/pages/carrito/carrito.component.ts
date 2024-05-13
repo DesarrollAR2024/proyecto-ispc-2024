@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Tienda } from 'app/model/Tienda';
 import { CarritoService } from 'app/service/carrito.service';
 
 @Component({
@@ -12,6 +13,11 @@ export class CarritoComponent implements OnInit {
   public grandTotal: number = 0;
   public mp: any;
   public bricksBuilder: any;
+  public cuponDescuento: any;
+  public porcentajeDescuento: number = 0;
+  public descuentoTotal: number = 0;
+  public precioFinal: number = 0;
+
 
   @ViewChild('paymentRef', { static: true }) paymentRef!: ElementRef;
 
@@ -33,6 +39,7 @@ export class CarritoComponent implements OnInit {
       .subscribe(res => {
         this.Tienda = res;
         this.grandTotal = this.carritoServicio.getTotalPrecio();
+        this.precioFinal = this.grandTotal
       })
 
     if (window.paypal) {
@@ -57,6 +64,7 @@ export class CarritoComponent implements OnInit {
                 this.carritoServicio.transactionID = details.id;
                 this.router.navigate(['confirmacion']);
                 console.log(details)
+                this.emptycarrito();
               }
             })
           },
@@ -84,4 +92,31 @@ export class CarritoComponent implements OnInit {
   getProductoTotal(tienda: any) {
     return (tienda.cantidad + 1) * parseFloat(tienda.precio);
   }
+
+  calcularDescuento() {
+    if (this.cuponDescuento == 'gamemate10') {
+      this.porcentajeDescuento = 10;
+      this.descuentoTotal = this.grandTotal * (this.porcentajeDescuento / 100);
+    }
+
+    else if (this.cuponDescuento == 'gamemate20') {
+      this.porcentajeDescuento = 20;
+      this.descuentoTotal = this.grandTotal * (this.porcentajeDescuento / 100);
+    }
+
+    else if (this.cuponDescuento == 'gamemate30') {
+      this.porcentajeDescuento = 30;
+      this.descuentoTotal = this.grandTotal * (this.porcentajeDescuento / 100);
+    }
+
+    else {
+      this.descuentoTotal = 0;
+    }
+
+    this.precioFinal = this.grandTotal - this.descuentoTotal
+  }
 }
+    
+  
+
+
