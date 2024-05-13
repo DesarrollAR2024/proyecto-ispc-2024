@@ -10,6 +10,7 @@ import { TokenService } from 'app/service/token.service';
 })
 export class HeaderComponent implements OnInit {
   isLogged = false;
+  isAdmin= false;
   public totalTienda: number = 0;
   constructor(private router: Router, private tokenService: TokenService, private carritoService: CarritoService) { }
 
@@ -19,6 +20,9 @@ export class HeaderComponent implements OnInit {
     } else {
       this.isLogged = false;
     }
+
+    this.isAdmin = this.tokenService.getAdmin();
+    
     this.carritoService.getTienda()
       .subscribe(res => {
         this.totalTienda = 0;
