@@ -3,4 +3,5 @@ export class Jwt {
     type!: string;
     nombreUsuario!: string;
     authorities!: string[];
+    is_admin! : boolean;
 }
