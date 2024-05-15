@@ -21,7 +21,7 @@
               <h2>{{Tienda.nombre}}</h2>
               <p class="price">${{Tienda.precio}}</p>
               <button (click)="addcart(Tienda)">AÑADIR AL CARRITO</button>
-                <div *ngIf="isLogged">
+                <div *ngIf="isAdmin">
                     <button class="btn btn-light" routerLink="/edittienda/{{Tienda.id_producto}}">
                     <i class="bi bi-pencil-fill"></i></button>
                     <button class="btn btn-danger" (click)="delete(Tienda.id_producto)">

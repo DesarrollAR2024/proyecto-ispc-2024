@@ -30,8 +30,20 @@
                         </td>                       
                     </tr>
                     <tr> 
+                        <td colspan="5" style="text-align: left; padding-right: 5%;"><strong>Si tiene un código de descuento ingréselo aquí: <input type="text" [(ngModel)]="cuponDescuento" style="border-radius: 2%;"/> </strong> <button (click)="calcularDescuento()" class="btn btn-primary btn-lg" style="margin-left: 1%; border-radius: 10%;" >Enviar</button></td> 
+                        <td colspan="2"> </td>
+                    </tr>
+                    <tr> 
                         <td colspan="5"> </td>
-                        <td colspan="2" style="text-align: end; padding-right: 5%;"><strong> Total: ${{grandTotal}} </strong></td> 
+                        <td colspan="2" style="text-align: end; padding-right: 5%;"><strong> Subtotal: ${{grandTotal}} </strong></td> 
+                    </tr>
+                    <tr> 
+                        <td colspan="5"> </td>
+                        <td colspan="2" style="text-align: end; padding-right: 5%; color: rgb(255, 8, 0);"><strong> Descuento: -${{descuentoTotal}} </strong></td> 
+                    </tr>
+                    <tr> 
+                        <td colspan="5"> </td>
+                        <td colspan="2" style="text-align: end; padding-right: 5%;"><strong> Total: ${{precioFinal}} </strong></td> 
                     </tr>
                 </tbody> 
             </table>

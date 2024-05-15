@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 const TOKEN_KEY = 'AuthToken';
 const USERNAME_KEY = 'AuthUsername';
 const AUTHORITIES_KEY = "AuthAuthorities";
+const ADMIN_KEY = "AdminToken";
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +38,9 @@ export class TokenService {
     window.sessionStorage.setItem(AUTHORITIES_KEY, JSON.stringify(authorities));
   }
 
+
+
+
   public getAuthorities(): string[] {
     this.roles = [];
     if(sessionStorage.getItem(AUTHORITIES_KEY)){
@@ -46,6 +50,17 @@ export class TokenService {
     }
     return this.roles;
   }
+
+
+  public setAdmin(is_admin: boolean) {
+    window.sessionStorage.setItem(ADMIN_KEY, JSON.stringify(is_admin));
+  }
+
+  public getAdmin(): boolean {
+    var isAdmin = Boolean(JSON.parse(window.sessionStorage.getItem(ADMIN_KEY) || 'false'));
+    return  isAdmin;
+  }
+
 
   public logOut(): void{
     window.sessionStorage.clear();

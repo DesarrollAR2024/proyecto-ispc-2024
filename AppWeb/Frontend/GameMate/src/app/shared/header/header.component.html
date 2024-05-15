@@ -1,6 +1,9 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg">
         <div class="container-fluid">
+            <div *ngIf="isAdmin" class="admin-bar">
+                Modo Admin
+            </div>"
             <a class="navbar-brand" href="index.html">
               <img src="../../../assets/gamemate.png" alt="logo" class="logo">
             </a>
@@ -34,6 +37,11 @@
                         <a class="nav-link d-flex justify-content-center align-items-center ms-3 " routerLink="/carrito"><i class="fa fa-cart-plus" aria-hidden="true" style="font-size: 25px;"></i></a>
                         <div style="font-size: 15px;" class="badge bg-ligth">{{totalTienda}}</div>
                     </li>
+                    <li class="link-app">
+                        <p>¡Conocé nuestra app!</p>
+                        <a class="icono-play" routerLink="/nosotros"></a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
