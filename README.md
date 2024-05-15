@@ -38,19 +38,19 @@ Página Web: HTML, CSS , Python.
 
 # Hay Equipo!
 
-Ayala, Déborat - Deboratayala
+Ayala, Déborat - [Deboratayala](https://github.com/Deboratayala) 
 
-Devia, Triana - TrianaDevia
+Devia, Triana - [TrianaDevia](https://github.com/TrianaDevia)
 
-Ortiz, Jesica - jesicaortiz
+Ortiz, Jesica - [jesicaortiz](https://github.com/jesicaortiz)
 
-Pedraza, Matías - matiasp23
+Pedraza, Matías - [matiasp23](https://github.com/matiasp23)
 
-Pigni, Karen - Karen-Pigni
+Pigni, Karen - [Karen-Pigni](https://github.com/Karen-Pigni)
 
-Pinto Villegas, Eduardo - EduRePiN
+Pinto Villegas, Eduardo - [EduRePiN](https://github.com/EduRePiN)
 
-Rojas, Marcelo - PsicoDevil
+Rojas, Marcelo - [PsicoDevil](https://github.com/PsicoDevil)   
 
 
 
