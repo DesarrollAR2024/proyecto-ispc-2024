@@ -2,160 +2,156 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:background="@drawable/background"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_faq"
+    android:orientation="vertical"
     tools:context="com.desarrollar.triviagamer.Settings">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="420dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/trivia_gamer_logo" />
 
     <LinearLayout
-        android:background="#ECE6E6"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_height="wrap_content">
-
+        android:background="#ECE6E6"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:background="#fff"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/fondo_faq">
 
             <LinearLayout
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:paddingTop="40dp"
-                android:paddingBottom="40dp"
                 android:layout_width="match_parent"
-                android:background="@color/lila"
-                android:layout_height="wrap_content">
+                android:layout_height="146dp"
+                android:background="@drawable/fondo_faq"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:text="Ajustes"
-                    android:textColor="#fff"
+                    android:textColor="#FFFFFF"
                     android:textSize="35sp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#fff"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="#FFFFFF">
 
                 <Button
                     android:id="@+id/Pfrecuentes"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
                     android:padding="20dp"
                     android:text="Preguntas Frecuentes"
-                    android:textColor="#000"
+                    android:textColor="#000000"
                     android:textSize="22sp"
-                    android:textStyle="bold"></Button>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
-                android:background="@drawable/shadow"
-                android:layout_height="5dp">
+                android:layout_height="1dp"
+                android:background="@drawable/shadow" />
 
-            </View>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#fff"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="#FFFFFF">
 
                 <Button
                     android:id="@+id/Tcondiciones"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
                     android:padding="20dp"
-                    android:text="Terminos y Condiciones"
-                    android:textColor="#000"
+                    android:text="Términos y Condiciones"
+                    android:textColor="#000000"
                     android:textSize="22sp"
-                    android:textStyle="bold"></Button>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
-                android:background="@drawable/shadow"
-                android:layout_height="5dp">
-
-            </View>
+                android:layout_height="1dp"
+                android:background="@drawable/shadow" />
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:background="#fff"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF">
 
                 <Button
                     android:id="@+id/contact"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
                     android:padding="20dp"
                     android:text="Contacto"
-                    android:textColor="#000"
+                    android:textColor="#000000"
                     android:textSize="22sp"
-                    android:textStyle="bold"></Button>
-
+                    android:textStyle="bold" />
             </LinearLayout>
-
 
             <View
                 android:layout_width="match_parent"
-                android:background="@drawable/shadow"
-                android:layout_height="5dp">
-
-            </View>
+                android:layout_height="1dp"
+                android:background="@drawable/shadow" />
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:background="#fff"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="10dp">
 
                 <TextView
                     android:id="@+id/music_textview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:text="Musica"
-                    android:textColor="#000"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Música"
+                    android:textColor="#000000"
                     android:textSize="22sp"
                     android:padding="20dp"
-                    android:textStyle="bold">
+                    android:textStyle="bold" />
 
-                </TextView>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="end"
-                    android:layout_height="match_parent">
-                    <Switch
-                        android:id="@+id/music_checkbox"
-                        android:layout_width="wrap_content"
-                        android:layout_gravity="center"
-                        android:onClick="viewClickHandler"
-                        android:layout_height="wrap_content">
-                    </Switch>
-                </LinearLayout>
+                <Switch
+                    android:id="@+id/music_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:onClick="viewClickHandler" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="137dp"
-                android:background="@color/lila"
+                android:layout_width="340dp"
+                android:layout_height="140dp"
+                android:background="@android:color/transparent"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:paddingTop="40dp"
@@ -163,7 +159,7 @@
 
                 <Button
                     android:id="@+id/bt_settings"
-                    android:layout_width="156dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/default_button_bg"
                     android:padding="15dp"
@@ -174,5 +170,5 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>
