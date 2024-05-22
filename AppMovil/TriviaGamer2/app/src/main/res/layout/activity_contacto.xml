@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/violeta"
+    android:background="@drawable/fondo_faq"
     tools:context="com.desarrollar.triviagamer.Contacto">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="420dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trivia_gamer_logo" />
+
 
     <ImageButton
         android:id="@+id/backButtoncontac"
         android:layout_width="30dp"
         android:layout_height="35dp"
-        android:background="@color/white"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/back"
+        android:tint="@color/white"/>
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="124dp"
         android:text="¡Haznos Saber!"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,13 +52,13 @@
         android:id="@+id/textView30"
         android:layout_width="290dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="No dudes en escribirnos. Tu opinión y comentarios son vitales para nosotros."
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -51,13 +66,13 @@
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="20dp"
         android:text="NOMBRE"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
@@ -66,10 +81,12 @@
         android:layout_width="207dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
-        android:background="@color/black"
+        android:background="@drawable/lavender_border"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:hint="Name"
+        android:textColor="@color/white"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,9 +111,12 @@
         android:layout_width="215dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
-        android:background="@color/black"
+        android:background="@drawable/lavender_border"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,10 +141,12 @@
         android:layout_width="290dp"
         android:layout_height="143dp"
         android:layout_marginTop="12dp"
+        android:background="@drawable/lavender_border"
         android:ems="10"
         android:inputType="text"
-        android:text=" Ingresa tu mensaje"
-        android:background="@color/black"
+        android:hint="Ingresa tu mensaje"
+        android:textColor="@color/white"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,10 +159,12 @@
         android:layout_marginTop="28dp"
         android:text="ENVIAR"
         android:textSize="20sp"
+        android:background="@drawable/lavender_border"
+        android:textColor="@color/violeta"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

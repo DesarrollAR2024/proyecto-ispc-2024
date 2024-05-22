@@ -3,194 +3,200 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_faq"
+    android:orientation="vertical"
     android:gravity="center"
     tools:context="com.desarrollar.triviagamer.Result">
 
+    <!-- Image Header -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="420dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/trivia_gamer_logo" />
 
+    <!-- Main Container -->
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="20dp">
 
+        <!-- Result Heading -->
         <TextView
-            android:textSize="45sp"
-            android:textColor="#fff"
-            android:textStyle="bold"
-            android:paddingBottom="40dp"
-            android:paddingTop="40dp"
-            android:textAlignment="center"
-            android:background="@drawable/dialog_bg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resultado " />  <!--Result Heading-->
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/resultado"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            android:textStyle="bold" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:background="#fff"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <!-- Total Questions -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#ffffff" android:orientation="horizontal" android:padding="8dp">
 
             <TextView
-                android:layout_width="200dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.5"
                 android:padding="10dp"
-                android:text="Total preguntas : "
+                android:text="@string/total_preguntas"
                 android:textColor="#000000"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="ExtraText" />
             <TextView
                 android:id="@+id/txtTotalQuestionsR"
-                android:textSize="22sp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="00 " />
-
-        </LinearLayout>  <!--Total Questions-->
-
-        <LinearLayout
-        android:orientation="horizontal"
-        android:background="#fff"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.5"
                 android:padding="10dp"
-                android:text="Monedas: "
+                android:text="00"
+                android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/txtCoinsR"
-            android:textSize="22sp"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:layout_weight="0.5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00 " />
-
-    </LinearLayout>  <!--Coins-->
-
+        <!-- Coins -->
         <LinearLayout
-            android:orientation="horizontal"
-            android:background="#fff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <TextView
-                android:layout_width="200dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.5"
                 android:padding="10dp"
-                android:text="Correctas: "
+                android:text="Monedas:"
                 android:textColor="#000000"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtCoinsR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
+        <!-- Correct Answers -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:padding="10dp"
+                android:text="Correctas:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/txtCorrectR"
-                android:textSize="22sp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textAlignment="center"
-                android:layout_weight="0.5"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="00 " />
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        </LinearLayout>  <!--Correct-->
-
+        <!-- Incorrect Answers -->
         <LinearLayout
-            android:orientation="horizontal"
-            android:background="#fff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:padding="8dp">
+
 
             <TextView
-                android:layout_width="200dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.5"
                 android:padding="10dp"
-                android:text="Incorrectas : "
+                android:text="Incorrectas:"
                 android:textColor="#000000"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
-
             <TextView
                 android:id="@+id/txtWrongR"
-                android:textSize="22sp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:textAlignment="center"
-                android:layout_weight="0.5"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="00 " />
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        </LinearLayout>  <!--Wrong-->
-
+        <!-- Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:background="@drawable/dialog_bg"
-            android:paddingTop="40dp"
-            android:paddingBottom="40dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
 
             <Button
                 android:id="@+id/bt_PlayAgainR"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="10dp"
-                android:textStyle="bold"
                 android:background="@drawable/dialog_button_bg"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="22sp"
                 android:padding="20dp"
+                android:text="Juega de nuevo"
+                android:textAlignment="center"
                 android:textAllCaps="false"
-                android:text="Juega de nuevo" />
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/bt_PlayScreenR"
-                android:layout_width="wrap_content"
-                android:textStyle="bold"
-                android:background="@drawable/dialog_button_bg"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="22sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="20dp"
-                android:padding="20dp"
-                android:textAllCaps="false"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Home" />
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/dialog_button_bg"
+                android:padding="20dp"
+                android:text="Home"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
