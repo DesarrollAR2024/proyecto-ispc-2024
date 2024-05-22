@@ -76,6 +76,8 @@
     <string name="opcion4">opcion4</string>
     <string name="numeropreg"> 1/5 </string>
     <string name="rankItemScore_placeholder" />
+    <string name="total_preguntas">Total preguntas:</string>
+    <string name="resultado">Resultado</string>
 
 
 </resources>

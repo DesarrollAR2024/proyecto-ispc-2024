@@ -4,19 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/fondo_faq"
     android:theme="@style/AppTheme"
     tools:context="com.desarrollar.triviagamer.Ranking">
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="421dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="420dp"
+        android:layout_height="102dp"
         android:layout_marginTop="4dp"
-        android:background="@color/violeta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/trivia_gamer_logo" />
