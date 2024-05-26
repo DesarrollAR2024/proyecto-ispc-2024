@@ -19,6 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/trivia_gamer_logo" />
 
+    <ImageView
+        android:id="@+id/volverfl"
+        android:layout_width="123dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="324dp"
@@ -33,7 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <LinearLayout
         android:layout_width="401dp"
         android:layout_height="408dp"
@@ -44,25 +54,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rankingList"
-            android:layout_width="match_parent"
-            android:layout_height="507dp"
-            android:layout_marginEnd="16dp"
-            tools:ignore="MissingConstraints" />
+            android:layout_width="360dp"
+            android:layout_height="408dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            tools:ignore="MissingConstraints"
+            tools:listitem="@layout/recycler_view_item" />
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/volverfl"
-        android:layout_width="123dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
