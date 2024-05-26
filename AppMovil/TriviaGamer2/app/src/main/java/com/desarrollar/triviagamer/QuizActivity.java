@@ -47,7 +47,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
 
-    private static final long COUNTDOWN_IN_MILLIS = 32000;
+    private static final long COUNTDOWN_IN_MILLIS = 10000;
 
     private CountDownTimer countDownTimer;
 
@@ -219,7 +219,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
                         }
-                    },2000);
+                    },1000);
                 }else {
 
                     buttonA.setBackgroundResource(R.drawable.wrong_button_bg);
@@ -241,7 +241,7 @@ public class QuizActivity extends AppCompatActivity {
                                 buttonD.setBackgroundResource(R.drawable.correct_button_bg);
                             }
                         }
-                    },2000);
+                    },1000);
 
                     Handler handler4 = new Handler();
                     handler4.postDelayed(new Runnable() {
@@ -256,14 +256,14 @@ public class QuizActivity extends AppCompatActivity {
                                 finalResult();
                             }
                         }
-                    },3000);
+                    },2000);
 
 
                 }
 
 
             }
-        },5000);
+        },3000);
 
     }
 
@@ -308,7 +308,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
                         }
-                    },2000);
+                    },1000);
                 }else {
 
                     buttonB.setBackgroundResource(R.drawable.wrong_button_bg);
@@ -330,7 +330,7 @@ public class QuizActivity extends AppCompatActivity {
                                 buttonD.setBackgroundResource(R.drawable.correct_button_bg);
                             }
                         }
-                    },2000);
+                    },1000);
 
                     Handler handler4 = new Handler();
                     handler4.postDelayed(new Runnable() {
@@ -345,14 +345,14 @@ public class QuizActivity extends AppCompatActivity {
                                 finalResult();
                             }
                         }
-                    },3000);
+                    },2000);
 
 
                 }
 
 
             }
-        },5000);
+        },3000);
 
 
     }
@@ -398,7 +398,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
                         }
-                    },2000);
+                    },1000);
                 }else {
 
                     buttonC.setBackgroundResource(R.drawable.wrong_button_bg);
@@ -420,7 +420,7 @@ public class QuizActivity extends AppCompatActivity {
                                 buttonD.setBackgroundResource(R.drawable.correct_button_bg);
                             }
                         }
-                    },2000);
+                    },1000);
 
                     Handler handler4 = new Handler();
                     handler4.postDelayed(new Runnable() {
@@ -435,14 +435,14 @@ public class QuizActivity extends AppCompatActivity {
                                 finalResult();
                             }
                         }
-                    },3000);
+                    },2000);
 
 
                 }
 
 
             }
-        },5000);
+        },3000);
 
     }
 
@@ -489,7 +489,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
                         }
-                    },2000);
+                    },1000);
                 }else {
 
                     buttonD.setBackgroundResource(R.drawable.wrong_button_bg);
@@ -511,7 +511,7 @@ public class QuizActivity extends AppCompatActivity {
                                 buttonA.setBackgroundResource(R.drawable.correct_button_bg);
                             }
                         }
-                    },2000);
+                    },1000);
 
                     Handler handler4 = new Handler();
                     handler4.postDelayed(new Runnable() {
@@ -526,14 +526,14 @@ public class QuizActivity extends AppCompatActivity {
                                 finalResult();
                             }
                         }
-                    },3000);
+                    },2000);
 
 
                 }
 
 
             }
-        },5000);
+        },3000);
 
     }
 
@@ -643,7 +643,7 @@ public class QuizActivity extends AppCompatActivity {
         savedTime = Long.parseLong(timeFormatted);
         timeText.setText(timeFormatted);
 
-        if (timeLeftMillis < 10000){
+        if (timeLeftMillis < 4000){
 
             timeText.setTextColor(ContextCompat.getColor(this,R.color.red));
 
@@ -664,7 +664,7 @@ public class QuizActivity extends AppCompatActivity {
                     timerDialog.timerDialog();
 
                 }
-            },2000);
+            },1000);
 
         }
 
