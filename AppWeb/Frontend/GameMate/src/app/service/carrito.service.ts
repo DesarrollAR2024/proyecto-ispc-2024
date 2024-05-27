@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Tienda } from 'app/model/Tienda';
 import { BehaviorSubject } from 'rxjs';
+import { NotificacionService } from './notificacionService';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,8 @@ export class CarritoService {
   public TiendaList = new BehaviorSubject<any>([]);
   transactionID: any;
 
-  constructor() { }
+  constructor(public notificacionService:NotificacionService){ }
+
   getTienda() {
     return this.TiendaList.asObservable();
   }
@@ -27,16 +29,24 @@ export class CarritoService {
         if (a.id_producto === tienda.id_producto) {
           a.cantidad += 1;
           found = true;
+          console.log ('Producto agregado al carrito:', tienda)
+          //llamar al metodo para mostrar la notificacion
+        this.notificacionService.mostrarNotificacion('Agregaste un producto al carrito');
           return
         }
-      })
+      });
 
       if (!found) {
         this.carritoItemList.push(tienda);
       }
-    } else {
+      //llamar al metodo para mostrar la notificacion
+      this.notificacionService.mostrarNotificacion('Agregaste un producto al carrito')
+    } 
+    else {
       this.carritoItemList.push(tienda);
-    }
+    } 
+      //llamar al metodo para mostrar la notificacion
+      this.notificacionService.mostrarNotificacion('Agregaste un producto al carrito');
 
     this.TiendaList.next(this.carritoItemList);
     this.getTotalPrecio();
