@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_faq"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.desarrollar.triviagamer.Result">
 
     <!-- Image Header -->
@@ -22,17 +21,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp">
+        android:orientation="vertical">
 
         <!-- Result Heading -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
             android:paddingTop="16dp"
+            android:paddingBottom="16dp"
             android:text="@string/resultado"
             android:textAlignment="center"
             android:textColor="#ffffff"
@@ -40,7 +39,12 @@
             android:textStyle="bold" />
 
         <!-- Total Questions -->
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#ffffff" android:orientation="horizontal" android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -52,6 +56,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 tools:ignore="ExtraText" />
+
             <TextView
                 android:id="@+id/txtTotalQuestionsR"
                 android:layout_width="0dp"
@@ -82,6 +87,7 @@
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/txtCoinsR"
                 android:layout_width="0dp"
@@ -99,8 +105,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:background="#ffffff"
+            android:orientation="horizontal"
             android:padding="8dp">
 
             <TextView
@@ -112,6 +118,7 @@
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/txtCorrectR"
                 android:layout_width="0dp"
@@ -129,8 +136,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:background="#ffffff"
+            android:orientation="horizontal"
             android:padding="8dp">
 
 
@@ -143,6 +150,7 @@
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/txtWrongR"
                 android:layout_width="0dp"
@@ -167,10 +175,10 @@
             <Button
                 android:id="@+id/bt_PlayAgainR"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="10dp"
+                android:layout_weight="1"
                 android:background="@drawable/dialog_button_bg"
                 android:padding="20dp"
                 android:text="Juega de nuevo"
@@ -183,10 +191,10 @@
             <Button
                 android:id="@+id/bt_PlayScreenR"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="20dp"
+                android:layout_weight="1"
                 android:background="@drawable/dialog_button_bg"
                 android:padding="20dp"
                 android:text="Home"

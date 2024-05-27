@@ -4,6 +4,8 @@ import { Tienda } from 'app/model/Tienda';
 import { TokenService } from 'app/service/token.service';
 import { CarritoService } from 'app/service/carrito.service';
 
+
+
 @Component({
   selector: 'app-tienda',
   templateUrl: './tienda.component.html',
