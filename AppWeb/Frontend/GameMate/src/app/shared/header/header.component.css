@@ -173,8 +173,7 @@
     padding: 15px 10px;
     cursor: pointer;
 }
-.admin-bar {
-    background: red;
+.admin-bar, .user-bar  {
     width: 150px;
     font-size: 14px;
     border-radius: 0 0 16px 16px;
@@ -183,6 +182,12 @@
     left: calc(50vw - 75px);
     text-align: center;
     z-index: 999;
+}
+.user-bar {
+    background-color: #4CAF50; 
+  }
+.admin-bar {
+    background-color: red;
 }
 
 
