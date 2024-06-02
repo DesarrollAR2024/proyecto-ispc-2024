@@ -1,7 +1,10 @@
 package com.desarrollar.triviagamer;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText username, password;
     Button btnlogin;
     DBHelper DB;
+    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username1);
         password = (EditText) findViewById(R.id.password1);
         btnlogin = (Button) findViewById(R.id.btnsignin1);
+
         DB = new DBHelper(this);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +46,14 @@ public class LoginActivity extends AppCompatActivity {
                         Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                         if (checkuserpass == true) {
                             Toast.makeText(LoginActivity.this, "Logeo exitoso", Toast.LENGTH_SHORT).show();
+
+                            int userId = DB.getUserId(user);
+                            sp = getSharedPreferences("UserDetails", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sp.edit();
+
+                            editor.putInt("userId", userId);
+                            editor.apply();
+
                             Intent intent = new Intent(getApplicationContext(), PlayScreen.class);
                             startActivity(intent);
                         } else {

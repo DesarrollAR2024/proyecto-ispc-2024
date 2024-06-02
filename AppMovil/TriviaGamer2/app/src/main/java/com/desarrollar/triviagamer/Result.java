@@ -1,6 +1,8 @@
 package com.desarrollar.triviagamer;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,7 +46,11 @@ public class Result extends AppCompatActivity {
       txtCorrectQues.setText(String.valueOf(correct));
       txtWrongQues.setText(String.valueOf(wrong));
 
+      DBHelper DB = new DBHelper(this);
+      SharedPreferences sp = getApplicationContext().getSharedPreferences("UserDetails", Context.MODE_PRIVATE);
+      int userId = sp.getInt("userId", -1);
 
+      DB.incrementPlayCount(userId);
 
       btPlayScreen.setOnClickListener(new View.OnClickListener() {
           @Override

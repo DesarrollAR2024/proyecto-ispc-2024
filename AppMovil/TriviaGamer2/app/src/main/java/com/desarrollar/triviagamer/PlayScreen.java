@@ -5,6 +5,7 @@ import static com.desarrollar.triviagamer.AppController.StopSound;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,10 +17,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PlayScreen extends AppCompatActivity implements View.OnClickListener {
 
-    Button btPlayQuiz,btSettings;
+    Button btPlayQuiz, btSettings, btPerfil;
 
     public static Context context;
-
+    private int userId;
     long backPressedTime = 0;
 
     @Override
@@ -30,9 +31,14 @@ public class PlayScreen extends AppCompatActivity implements View.OnClickListene
 
         btPlayQuiz = findViewById(R.id.bt_playQuiz);
         btSettings = findViewById(R.id.bt_settings);
+        btPerfil = findViewById(R.id.bt_perfil);
 
         btSettings.setOnClickListener(this);
         btPlayQuiz.setOnClickListener(this);
+        btPerfil.setOnClickListener(this);
+
+        Intent baseIntent = getIntent();
+        userId = baseIntent.getIntExtra("user", -1);
 
         context = getApplicationContext();
         AppController.currentActivity = this;
@@ -66,6 +72,11 @@ public class PlayScreen extends AppCompatActivity implements View.OnClickListene
                 finish();
                 break;
 
+            case R.id.bt_perfil:
+                Intent perfilIntent = new Intent(PlayScreen.this, Perfil.class);
+                startActivity(perfilIntent);
+                finish();
+                break;
         }
 
     }
