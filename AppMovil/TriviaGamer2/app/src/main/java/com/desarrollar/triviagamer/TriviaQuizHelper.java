@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class TriviaQuizHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "TriviaQuiz.db";
-    private static final int DATBASE_VERSION = 16;
+    private static final int DATBASE_VERSION = 17;
 
     private SQLiteDatabase db;
 
@@ -249,7 +249,50 @@ public class TriviaQuizHelper extends SQLiteOpenHelper {
         TriviaQuestion q64= new TriviaQuestion("¿Quién es el personaje de videojuegos más famoso de todos los tiempos?", "Pikachu", "Mario", "Superman", "Sonic", "Mario", TriviaQuestion.CATEGORY_PERSONAJES);
         addQuestions(q64);
 
+        TriviaQuestion q65= new TriviaQuestion("¿Que nombre oficial reciben los ejércitos del Risk?", "Soldados, caballos y cañones", "General, soldado a caballo y contraalmirante", "Infantería, caballería y artillería", "Soldados y artillería", "Infantería, caballería y artillería", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q65);
 
+        TriviaQuestion q66= new TriviaQuestion("¿A que otro juego le debe su fama Monopoly?", "Superpoly", "Finanzas", "The Landlord's Game", "Estanciero", "The Landlord's Game", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q66);
+
+        TriviaQuestion q67= new TriviaQuestion("¿Como se llama el juego en el que hay que perder para ganar?", "Hotel", "Tiburones de las Finanzas", "Bancarrota", "Prisionero", "Bancarrota", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q67);
+
+        TriviaQuestion q68= new TriviaQuestion("¿Que personaje NO aparece en La Herencia de Tía Ágata?", "Tía Ágata", "El Perro", "La Doctora", "El Gato", "El Perro", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q68);
+
+        TriviaQuestion q69= new TriviaQuestion("¿Quién es el autor de HeroQuest?", "Stephen Baker", "Pepe Pineda", "Charles Darrow", "Stephen Baker", "Emanuel Velez", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q69);
+
+        TriviaQuestion q70= new TriviaQuestion("¿Hasta cuantos jugadores pueden enfrentarse en Quien es Quién?", "Dos", "Cuatro", "Seis", "Ocho", "Dos", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q70);
+
+        TriviaQuestion q71= new TriviaQuestion("¿En qué juego se observan laminas en busca de objetos o seres?", "Blokus", "Kaleidos", "Pictionary", "Sokoban", "Kaleidos", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q71);
+
+        TriviaQuestion q72= new TriviaQuestion("¿Que personaje de Nintendo cuenta con una versión oficial de Jenga?", "Donkey Kong", "Mario", "Luigi", "Bowser", "Donkey Kong", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q72);
+
+        TriviaQuestion q73= new TriviaQuestion("¿En qué juego se marcan los fracasos en las manos de los jugadores con un sello?", "El Fantasma de la Opera", "Embrujada", "Inkognito", "Rummy", "El Fantasma de la Opera", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q73);
+
+        TriviaQuestion q74= new TriviaQuestion("¿Con que color está representado Prado en el Cluedo tradicional?", "Amarillo", "Azul", "Rojo", "Verde", "Verde", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q74);
+
+        TriviaQuestion q75= new TriviaQuestion("¿En qué juego de mesa las miniaturas llevan mochila para guardar joyas?", "Misterio", "El Puente Prohibido", "El Extraño Caso de la Calle Morgue", "Tabú", "El Puente Prohibido", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q75);
+
+        TriviaQuestion q76= new TriviaQuestion("¿Que negocio aparece en Fin de Mes?", "Restaurantes Andantes", "Fruterías Elías", "Limusinas Josefina", "Kiosco Juanito", "Limusinas Josefina", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q76);
+
+        TriviaQuestion q77= new TriviaQuestion("¿Que juego suele ocupar la otra cara del tablero del Parchís?", "Las Damas", "El Ajedrez", "Cluedo", "La Oca", "La Oca", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q77);
+
+        TriviaQuestion q78= new TriviaQuestion("¿Quién es el ilustrador de En Busca del Imperio Cobra?", "Siscu Bellido", "Ramses Bosque", "Isidre Mones", "Giancarlo Esposito", "Isidre Mones", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q78);
+
+        TriviaQuestion q79= new TriviaQuestion("¿Cuál es el objetivo del Stratego?", "Capturar la Bandera", "Descubrir al espía contrario", "Matar a los exploradores rivales", "Llegar hasta el fin del camino", "Capturar la Bandera", TriviaQuestion.CATEGORY_JUEGOSDEMESA);
+        addQuestions(q79);
 
     }
 

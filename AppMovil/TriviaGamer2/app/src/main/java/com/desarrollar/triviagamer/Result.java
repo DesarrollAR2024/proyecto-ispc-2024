@@ -1,6 +1,7 @@
 package com.desarrollar.triviagamer;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Result extends AppCompatActivity {
 
     Button btPlayAgain,btPlayScreen;
+    private Button btnlink;
+    private String url;
+
     TextView txtTotalQuesion,txtCoins,txtWrongQues,txtCorrectQues;
 
 
@@ -20,33 +24,42 @@ public class Result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-      btPlayAgain = findViewById(R.id.bt_PlayAgainR);
-      btPlayScreen = findViewById(R.id.bt_PlayScreenR);
+        btnlink = findViewById(R.id.btnlink);
+        url="https://gamematearg.web.app/";
+        btnlink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse(url);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
 
-      txtCoins = findViewById(R.id.txtCoinsR);
-      txtCorrectQues = findViewById(R.id.txtCorrectR);
-      txtWrongQues = findViewById(R.id.txtWrongR);
-      txtTotalQuesion = findViewById(R.id.txtTotalQuestionsR);
+        btPlayAgain = findViewById(R.id.bt_PlayAgainR);
+        btPlayScreen = findViewById(R.id.bt_PlayScreenR);
+
+        txtCoins = findViewById(R.id.txtCoinsR);
+        txtCorrectQues = findViewById(R.id.txtCorrectR);
+        txtWrongQues = findViewById(R.id.txtWrongR);
+        txtTotalQuesion = findViewById(R.id.txtTotalQuestionsR);
+
+        Intent intent = getIntent();
+
+        int totalQuestions = intent.getIntExtra(Constants.TOTAL_QUESTIONS,0);
+        int coins = intent.getIntExtra(Constants.COINS,0);
+        int correct = intent.getIntExtra(Constants.CORRECT,0);
+        int wrong = intent.getIntExtra(Constants.WRONG,0);
+        final String categoryValue = intent.getStringExtra("Category");
+
+
+        txtTotalQuesion.setText(String.valueOf(totalQuestions));
+        txtCoins.setText(String.valueOf(coins));
+        txtCorrectQues.setText(String.valueOf(correct));
+        txtWrongQues.setText(String.valueOf(wrong));
 
 
 
-      Intent intent = getIntent();
-
-      int totalQuestions = intent.getIntExtra(Constants.TOTAL_QUESTIONS,0);
-      int coins = intent.getIntExtra(Constants.COINS,0);
-      int correct = intent.getIntExtra(Constants.CORRECT,0);
-      int wrong = intent.getIntExtra(Constants.WRONG,0);
-      final String categoryValue = intent.getStringExtra("Category");
-
-
-      txtTotalQuesion.setText(String.valueOf(totalQuestions));
-      txtCoins.setText(String.valueOf(coins));
-      txtCorrectQues.setText(String.valueOf(correct));
-      txtWrongQues.setText(String.valueOf(wrong));
-
-
-
-      btPlayScreen.setOnClickListener(new View.OnClickListener() {
+        btPlayScreen.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
               Intent intent = new Intent(Result.this,PlayScreen.class);
