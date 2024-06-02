@@ -238,7 +238,7 @@
 
         <Button
             android:id="@+id/btnlink"
-            android:text="NO TE OLVIDES DE VISITAR EL MARKET DE LA WEB"
+            android:text="CAMBIA TU CODIGO DE DESCUENTO AQUI"
             android:background="@color/violeta"
             android:textColor="@color/white"
             android:textStyle="bold"
