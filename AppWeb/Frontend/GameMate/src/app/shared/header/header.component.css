@@ -16,6 +16,24 @@
     background-color: none  ;
 }
 
+.navbar-nav .link-app p{
+    margin-left: 70px;
+    font-family: var(--fuente-primaria);
+}
+
+.navbar-nav .link-app a{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -30px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../../assets/androide.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+
 .navbar .navbar-nav .nav-item {
     margin: 0;
     padding: 0;
@@ -155,8 +173,7 @@
     padding: 15px 10px;
     cursor: pointer;
 }
-.admin-bar {
-    background: red;
+.admin-bar, .user-bar  {
     width: 150px;
     font-size: 14px;
     border-radius: 0 0 16px 16px;
@@ -166,6 +183,13 @@
     text-align: center;
     z-index: 999;
 }
+.user-bar {
+    background-color: #4CAF50; 
+  }
+.admin-bar {
+    background-color: red;
+}
+
 
 
 

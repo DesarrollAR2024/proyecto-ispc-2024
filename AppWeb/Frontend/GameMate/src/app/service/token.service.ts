@@ -38,6 +38,9 @@ export class TokenService {
     window.sessionStorage.setItem(AUTHORITIES_KEY, JSON.stringify(authorities));
   }
 
+
+
+
   public getAuthorities(): string[] {
     this.roles = [];
     if(sessionStorage.getItem(AUTHORITIES_KEY)){
@@ -48,6 +51,7 @@ export class TokenService {
     return this.roles;
   }
 
+
   public setAdmin(is_admin: boolean) {
     window.sessionStorage.setItem(ADMIN_KEY, JSON.stringify(is_admin));
   }
@@ -56,7 +60,6 @@ export class TokenService {
     var isAdmin = Boolean(JSON.parse(window.sessionStorage.getItem(ADMIN_KEY) || 'false'));
     return  isAdmin;
   }
-
 
 
   public logOut(): void{

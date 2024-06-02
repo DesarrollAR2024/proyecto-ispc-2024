@@ -8,6 +8,15 @@
     android:background="@drawable/fondo_faq"
     tools:context=".EditUserActivity">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="410dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/trivia_gamer_logo" />
+
+
     <EditText
         android:id="@+id/userIdEditText"
         android:layout_width="match_parent"
@@ -21,14 +30,14 @@
 
     <Button
         android:id="@+id/searchButton"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/default_button_bg"
-        android:text="Buscar Usuario"
         android:layout_marginLeft="100sp"
         android:layout_marginTop="10sp"
         android:layout_marginBottom="10sp"
+        android:background="@drawable/default_button_bg"
+        android:text="Buscar Usuario"
         android:textAllCaps="false"
         android:textColor="#fff"
         android:textSize="20sp" />
@@ -99,38 +108,38 @@
 
     <Button
         android:id="@+id/modifyButton"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="173dp"
+        android:layout_height="44dp"
         android:layout_marginLeft="100sp"
         android:layout_marginTop="15dp"
+        android:background="@drawable/default_button_bg"
+        android:text="Modificar Usuario"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="20sp"
-        android:background="@drawable/default_button_bg"
-        android:text="Modificar Usuario" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/deleteButton"
-        android:layout_width="200dp"
-        android:layout_height="50sp"
+        android:layout_width="171dp"
+        android:layout_height="42dp"
         android:layout_marginLeft="100sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/default_button_bg"
+        android:text="Eliminar Usuario"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="20sp"
-        android:background="@drawable/default_button_bg"
-        android:layout_marginTop="10dp"
-        android:text="Eliminar Usuario" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="171dp"
+        android:layout_height="39dp"
         android:layout_marginLeft="100sp"
         android:layout_marginTop="10sp"
         android:background="@drawable/default_button_bg"
+        android:text="Volver"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:textSize="25sp"
-        android:text="Volver" />
+        android:textSize="25sp" />
 
 </LinearLayout>

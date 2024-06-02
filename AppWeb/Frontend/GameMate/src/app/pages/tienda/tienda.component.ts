@@ -4,6 +4,8 @@ import { Tienda } from 'app/model/Tienda';
 import { TokenService } from 'app/service/token.service';
 import { CarritoService } from 'app/service/carrito.service';
 
+
+
 @Component({
   selector: 'app-tienda',
   templateUrl: './tienda.component.html',
@@ -24,8 +26,7 @@ export class TiendaComponent {
     } else {
       this.isLogged = false;
     }
-
-      this.isAdmin=this.tokenService.getAdmin();
+     this.isAdmin=this.tokenService.getAdmin();
 
     if (this.TiendaList) {
       this.TiendaList.forEach((a: any) => {

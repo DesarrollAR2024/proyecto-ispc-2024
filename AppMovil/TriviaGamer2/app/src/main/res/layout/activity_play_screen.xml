@@ -4,10 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/background"
-    android:layout_height="match_parent"
+    android:background="@drawable/fondo_faq"
     tools:context="com.desarrollar.triviagamer.PlayScreen">
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_marginBottom="50dp"
         android:text="Quiz Game Mate"
         android:textAlignment="center"
-        android:textColor="#fff"
+        android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="bold" />
 
@@ -37,10 +37,10 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:padding="10dp"
-        android:text="Jugar"
         android:background="@drawable/default_button_bg"
+        android:text="Jugar"
         android:textAllCaps="false"
-        android:textColor="#fff"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -51,11 +51,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/default_button_bg"
         android:padding="10dp"
+        android:background="@drawable/default_button_bg"
         android:text="Ajustes"
         android:textAllCaps="false"
-        android:textColor="#fff"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold" />
 </LinearLayout>

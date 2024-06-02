@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/fondo_faq"
     android:layout_height="match_parent"
     tools:context="com.desarrollar.triviagamer.QuizActivity">
 
@@ -178,7 +178,7 @@
             android:text="What is the best full Meaning of Android Operating System?"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="23sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"

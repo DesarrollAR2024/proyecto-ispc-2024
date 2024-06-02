@@ -22,8 +22,7 @@ export class HeaderComponent implements OnInit {
     }
 
     this.isAdmin = this.tokenService.getAdmin();
-
-
+    
     this.carritoService.getTienda()
       .subscribe(res => {
         this.totalTienda = 0;
