@@ -27,7 +27,7 @@ public class Result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         btnlink = findViewById(R.id.btnlink);
-        url="https://gamematearg.web.app/";
+        url="https://gamematearg.web.app/tienda";
         btnlink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
