@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +17,8 @@ public class Result extends AppCompatActivity {
     private Button btnlink;
     private String url;
 
-    TextView txtTotalQuesion,txtCoins,txtWrongQues,txtCorrectQues;
+    TextView txtTotalQuesion,txtCoins,txtWrongQues,txtCorrectQues, txtCode;
+    LinearLayout discountLayout;
 
 
     @Override
@@ -42,6 +44,8 @@ public class Result extends AppCompatActivity {
         txtCorrectQues = findViewById(R.id.txtCorrectR);
         txtWrongQues = findViewById(R.id.txtWrongR);
         txtTotalQuesion = findViewById(R.id.txtTotalQuestionsR);
+        txtCode = findViewById(R.id.txtCode);
+        discountLayout = findViewById(R.id.discountLayout);
 
         Intent intent = getIntent();
 
@@ -58,6 +62,28 @@ public class Result extends AppCompatActivity {
         txtWrongQues.setText(String.valueOf(wrong));
 
 
+        // Mostrar código de descuento basado en el puntaje
+        if (coins == 50) {
+            txtCode.setText("gamemate30");
+            discountLayout.setVisibility(View.VISIBLE);
+        } else if (coins == 40) {
+            txtCode.setText("gamemate20");
+            discountLayout.setVisibility(View.VISIBLE);
+        } else if (coins == 30) {
+            txtCode.setText("gamemate10");
+            discountLayout.setVisibility(View.VISIBLE);
+        } else {
+            discountLayout.setVisibility(View.GONE);
+        }
+
+        btPlayScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Result.this, PlayScreen.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         btPlayScreen.setOnClickListener(new View.OnClickListener() {
           @Override
