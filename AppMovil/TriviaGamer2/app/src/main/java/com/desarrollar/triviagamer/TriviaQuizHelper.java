@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class TriviaQuizHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "TriviaQuiz.db";
-    private static final int DATBASE_VERSION = 17;
+    private static final int DATBASE_VERSION = 18;
 
     private SQLiteDatabase db;
 
@@ -72,13 +72,13 @@ public class TriviaQuizHelper extends SQLiteOpenHelper {
         TriviaQuestion q5= new TriviaQuestion("¿Como se llama el protagonista de Red Dead Redemption?","Susan Grimshaw","Sadie Adler","John Marston","Arthur Morgan ","John Marston",TriviaQuestion.CATEGORY_PERSONAJES);
         addQuestions(q5);
 
-        TriviaQuestion q6= new TriviaQuestion("¿De que deporte e-sport son pro-players los jugadores Faker , Rookie, Uzi ?","League of Legends ","Valorant","Csgo","Fortnite","League of Legends ",TriviaQuestion.CATEGORY_PERSONAJES);
+        TriviaQuestion q6= new TriviaQuestion("¿De que deporte e-sport son pro-players los jugadores Faker , Rookie, Uzi ?","League of Legends ","Valorant","Csgo","Fortnite","League of Legends ",TriviaQuestion.CATEGORY_JUEGOSDEROL);
         addQuestions(q6);
 
-        TriviaQuestion q7= new TriviaQuestion("¿En cual consola salio originalmente el juego “ Leyenda de Zelda : La ocarina del tiempo?","NintendoDS","Gamecube","Xbox","Nintendo 64","Nintendo 64",TriviaQuestion.CATEGORY_HISTORIA);
+        TriviaQuestion q7= new TriviaQuestion("¿En cual consola salio originalmente el juego “ Leyenda de Zelda : La ocarina del tiempo?","NintendoDS","Gamecube","Xbox","Nintendo 64","Nintendo 64",TriviaQuestion.CATEGORY_JUEGOSDEROL);
         addQuestions(q7);
 
-        TriviaQuestion q8= new TriviaQuestion("¿Cual es la profesion de vivi en Final Fantasy IX?","Soladado","Mago Negro","Ladron","Mago blanco","Mago Negro",TriviaQuestion.CATEGORY_PERSONAJES);
+        TriviaQuestion q8= new TriviaQuestion("¿Cual es la profesion de vivi en Final Fantasy IX?","Soladado","Mago Negro","Ladron","Mago blanco","Mago Negro",TriviaQuestion.CATEGORY_JUEGOSDEROL);
         addQuestions(q8);
 
         TriviaQuestion q9= new TriviaQuestion("¿Como se llama el primer videojuego del mundo ?","Tetris","Pac-Man","Spaces Invaders","Pong","Pong",TriviaQuestion.CATEGORY_HISTORIA);
@@ -129,7 +129,7 @@ public class TriviaQuizHelper extends SQLiteOpenHelper {
         TriviaQuestion q24= new TriviaQuestion("¿Cómo se llama el villano intergaláctico en la serie Metroid?", "Mother Brain", "King Koopa", "Dr. Wily", "Dark Samus", "Mother Brain", TriviaQuestion.CATEGORY_PERSONAJES);
         addQuestions(q24);
 
-        TriviaQuestion q25= new TriviaQuestion("¿A quién juegas en la serie de The Legend of Zelda?", "zelda", "Link", "Ganondorf", "Espona", "Link", TriviaQuestion.CATEGORY_PERSONAJES);
+        TriviaQuestion q25= new TriviaQuestion("¿A quién juegas en la serie de The Legend of Zelda?", "zelda", "Link", "Ganondorf", "Espona", "Link", TriviaQuestion.CATEGORY_JUEGOSDEROL);
         addQuestions(q25);
 
         TriviaQuestion q26= new TriviaQuestion("¿Qué sistema de juego introdujo primero a los jugadores al juego controlado por movimiento?", "Xbox Kinect", "Nintendo Wii", "PlayStation Move", "Sega Activator", "Nintendo Wii", TriviaQuestion.CATEGORY_HISTORIA);
@@ -207,7 +207,7 @@ public class TriviaQuizHelper extends SQLiteOpenHelper {
         TriviaQuestion q50= new TriviaQuestion("Completa este código de trucos clásico: IDKFA es a DOOM lo que ___ es a The Sims?", "Motherlode", "Godmode", "Rosebud", "InfiniteLives", "Rosebud", TriviaQuestion.CATEGORY_PERSONAJES);
         addQuestions(q50);
 
-        TriviaQuestion q51= new TriviaQuestion("¿Qué juego te tiene gestionando la vida en una isla desierta con algunos adorables vecinos animales?", "Zoo Tycoon", "Stranded Deep", "FarmVille", "Animal Crossing", "Animal Crossing", TriviaQuestion.CATEGORY_HISTORIA);
+        TriviaQuestion q51= new TriviaQuestion("¿Qué juego te tiene gestionando la vida en una isla desierta con algunos adorables vecinos animales?", "Zoo Tycoon", "Stranded Deep", "FarmVille", "Animal Crossing", "Animal Crossing", TriviaQuestion.CATEGORY_JUEGOSDEROL);
         addQuestions(q51);
 
         TriviaQuestion q52= new TriviaQuestion("¿Cuál de estas franquicias de videojuegos más vendidas no tiene un personaje principal y ha vendido más?", "Tetris", "Minecraft", "Los Sims", "Juego de Tronos", "Tetris", TriviaQuestion.CATEGORY_PERSONAJES);
@@ -234,7 +234,7 @@ public class TriviaQuizHelper extends SQLiteOpenHelper {
         TriviaQuestion q59= new TriviaQuestion("¿Qué power-up transforma a Mario en su versión voladora, similar a un mapache?", "Hoja Super", "Pluma Mágica", "Red Bull", "Champiñón de Vuelo", "Hoja Super", TriviaQuestion.CATEGORY_PERSONAJES);
         addQuestions(q59);
 
-        TriviaQuestion q60= new TriviaQuestion("En la serie de Legend of Zelda, ¿qué instrumento es un objeto mágico recurrente?", "Guitarra", "Ocarina", "Teclado", "Triangulo", "Ocarina", TriviaQuestion.CATEGORY_PERSONAJES);
+        TriviaQuestion q60= new TriviaQuestion("En la serie de Legend of Zelda, ¿qué instrumento es un objeto mágico recurrente?", "Guitarra", "Ocarina", "Teclado", "Triangulo", "Ocarina", TriviaQuestion.CATEGORY_JUEGOSDEROL);
         addQuestions(q60);
 
         TriviaQuestion q61= new TriviaQuestion("¿Cuál es la comida favorita de cierto erizo azul muy rápido?", "Pizza", "Chili Dogs", "Tocino", "Espinacas", "Chili Dogs", TriviaQuestion.CATEGORY_PERSONAJES);
