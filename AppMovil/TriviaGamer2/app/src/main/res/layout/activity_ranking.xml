@@ -57,9 +57,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rankingList"
             android:layout_width="360dp"
-            android:layout_height="408dp"
+            android:layout_height="450dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:background="@drawable/default_button_bg"
             tools:ignore="MissingConstraints"
             tools:listitem="@layout/recycler_view_item" />
     </LinearLayout>
