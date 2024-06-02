@@ -13,10 +13,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class PlayScreen extends AppCompatActivity implements View.OnClickListener {
 
-    Button btPlayQuiz,btSettings;
+    Button btPlayQuiz, btSettings, btProfile;
 
     public static Context context;
 
@@ -27,76 +26,68 @@ public class PlayScreen extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_screen);
 
-
         btPlayQuiz = findViewById(R.id.bt_playQuiz);
         btSettings = findViewById(R.id.bt_settings);
+        btProfile = findViewById(R.id.bt_profile); // Nuevo botón
 
         btSettings.setOnClickListener(this);
         btPlayQuiz.setOnClickListener(this);
+        btProfile.setOnClickListener(this); // Nuevo botón
 
         context = getApplicationContext();
         AppController.currentActivity = this;
-        if (SettingsPreferences.getMusicEnableDisable(context)){
+        if (SettingsPreferences.getMusicEnableDisable(context)) {
             try {
-
                 AppController.playMusic();
-
-            }catch (IllegalStateException e){
+            } catch (IllegalStateException e) {
                 e.printStackTrace();
             }
         }
-
     }
 
     @Override
     public void onClick(View view) {
-
-        switch (view.getId()){
-
+        switch (view.getId()) {
             case R.id.bt_playQuiz:
-
-                Intent playIntent = new Intent(PlayScreen.this,CategoryActivity.class);
+                Intent playIntent = new Intent(PlayScreen.this, CategoryActivity.class);
                 startActivity(playIntent);
                 finish();
                 break;
 
             case R.id.bt_settings:
-                Intent settingIntent = new Intent(PlayScreen.this,Settings.class);
+                Intent settingIntent = new Intent(PlayScreen.this, Settings.class);
                 startActivity(settingIntent);
                 finish();
                 break;
 
+            case R.id.bt_profile: // Nuevo caso para el botón de perfil
+                Intent profileIntent = new Intent(PlayScreen.this, PerfilUserActivity.class);
+                startActivity(profileIntent);
+                finish();
+                break;
         }
-
     }
 
     @Override
     public void onBackPressed() {
-
         super.onBackPressed();
         StopSound();
 
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
-
             new AlertDialog.Builder(this)
                     .setTitle("Do you want to Exit")
                     .setNegativeButton("No", null)
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-
                             setResult(RESULT_OK, new Intent().putExtra("Exit", true));
                             finish();
-
                         }
                     }).create().show();
-
         } else {
-
             Toast.makeText(context, "Press Again to Exit", Toast.LENGTH_SHORT).show();
         }
 
         backPressedTime = System.currentTimeMillis();
-
     }
 }

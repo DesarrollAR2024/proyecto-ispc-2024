@@ -22,7 +22,7 @@ public class CreateUserActivity extends AppCompatActivity {
         buttonvolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CreateUserActivity.this, AdminActivity.class);
+                Intent intent = new Intent(CreateUserActivity.this, PerfilUserActivity.class);
                 startActivity(intent);
             }
         });
