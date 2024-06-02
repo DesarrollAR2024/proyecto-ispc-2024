@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_faq"
-    tools:context=".perfiluserActivity">
+    tools:context=".PerfilUserActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -23,7 +23,7 @@
         android:layout_width="302dp"
         android:layout_height="56dp"
         android:layout_marginTop="152dp"
-        android:text="Panel Administrador"
+        android:text="Panel de usuario"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
@@ -38,7 +38,7 @@
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:layout_marginTop="64dp"
-        android:text="Listar Usuarios"
+        android:text=" Mi ranking"
         android:background="@drawable/default_button_bg"
         android:textAllCaps="false"
         android:textColor="#fff"
@@ -66,7 +66,7 @@
 
     <Button
         android:id="@+id/button4"
-        android:text="Nuevo Usuario"
+        android:text="Volver al juego"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"

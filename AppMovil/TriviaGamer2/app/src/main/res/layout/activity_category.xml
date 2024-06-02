@@ -8,6 +8,20 @@
     android:background="@drawable/fondo_faq"
     tools:context="com.desarrollar.triviagamer.CategoryActivity">
 
+    <ImageButton
+        android:id="@+id/backButtoncontac"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/back"
+        android:tint="@color/white"/>
+
     <Button
         android:id="@+id/bt_Java"
         android:layout_width="139dp"
