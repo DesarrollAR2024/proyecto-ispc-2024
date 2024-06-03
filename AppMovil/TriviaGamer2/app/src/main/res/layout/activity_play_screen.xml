@@ -45,7 +45,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/bt_perfil"
+        android:id="@+id/bt_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -74,18 +74,4 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/bt_profile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:padding="10dp"
-        android:background="@drawable/default_button_bg"
-        android:text="Mi Perfil"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
 </LinearLayout>
