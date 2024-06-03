@@ -6,12 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AdminActivity extends AppCompatActivity {
+public class PerfilUserActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin);
+        setContentView(R.layout.activity_perfiluser);
 
         Button rankingButton = findViewById(R.id.button);
         Button editUserButton = findViewById(R.id.button3);
@@ -20,7 +20,7 @@ public class AdminActivity extends AppCompatActivity {
         rankingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this, PerfilUserActivity.class);
+                Intent intent = new Intent(PerfilUserActivity.this, Ranking.class);
                 startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class AdminActivity extends AppCompatActivity {
         editUserButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this, PerfilUserActivity.class);
+                Intent intent = new Intent(PerfilUserActivity.this, Perfil.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class AdminActivity extends AppCompatActivity {
         backToGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this, MainActivity.class);
+                Intent intent = new Intent(PerfilUserActivity.this, PlayScreen.class);
                 startActivity(intent);
             }
         });

@@ -9,9 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 
 public class Perfil extends AppCompatActivity {
 
@@ -21,6 +19,7 @@ public class Perfil extends AppCompatActivity {
     Button buttnvolverperf, cambioPasswordButton;
     TextView textView43, textView45, textView46;
     EditText cambioPassword1, cambioPassword2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +31,7 @@ public class Perfil extends AppCompatActivity {
 
         userId = sp.getInt("userId", -1);
 
-        if(intent.hasExtra("cambioPassword")){
+        if (intent.hasExtra("cambioPassword")) {
             Toast.makeText(this, "Contraseña cambiada con exito.", Toast.LENGTH_LONG).show();
         }
 
@@ -56,7 +55,7 @@ public class Perfil extends AppCompatActivity {
         buttnvolverperf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PlayScreen.class);
+                Intent intent = new Intent(getApplicationContext(), PerfilUserActivity.class);
                 startActivity(intent);
             }
         });
@@ -67,17 +66,18 @@ public class Perfil extends AppCompatActivity {
                 String password1 = cambioPassword1.getText().toString();
                 String password2 = cambioPassword2.getText().toString();
 
-                if(password1.equals(password2) && !password1.isEmpty()){
-                    if (DB.updateUserPassword(userId, password1)){
+                if (password1.equals(password2) && !password1.isEmpty()) {
+                    if (DB.updateUserPassword(userId, password1)) {
                         Intent intent = new Intent(getApplicationContext(), Perfil.class);
                         intent.putExtra("cambioPassword", true);
                         startActivity(intent);
-                    }
-                    else {
-                        Toast.makeText(getApplicationContext(), "No se pudo cambiar la contraseña.", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "No se pudo cambiar la contraseña.", Toast.LENGTH_SHORT)
+                                .show();
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Las contraseñas no son iguales.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Las contraseñas no son iguales.", Toast.LENGTH_SHORT)
+                            .show();
                 }
             }
         });

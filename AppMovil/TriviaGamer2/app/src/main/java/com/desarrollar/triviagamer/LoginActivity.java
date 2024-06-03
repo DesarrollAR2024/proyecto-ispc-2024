@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 else {
                     if (user.equals("admin") && pass.equals("12345")) {
                         // Si el usuario es "admin" y la contraseña es "12345", inicia AdminActivity
-                        Intent intent = new Intent(getApplicationContext(), AdminActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), PerfilUserActivity.class);
                         startActivity(intent);
                     } else {
                         Boolean checkuserpass = DB.checkusernamepassword(user, pass);
