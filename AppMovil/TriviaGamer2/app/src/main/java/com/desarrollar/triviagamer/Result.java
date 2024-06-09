@@ -1,6 +1,8 @@
 package com.desarrollar.triviagamer;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -10,16 +12,14 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class Result extends AppCompatActivity {
 
-    Button btPlayAgain,btPlayScreen;
+    Button btPlayAgain, btPlayScreen;
     private Button btnlink;
     private String url;
 
-    TextView txtTotalQuesion,txtCoins,txtWrongQues,txtCorrectQues, txtCode;
+    TextView txtTotalQuesion, txtCoins, txtWrongQues, txtCorrectQues, txtCode;
     LinearLayout discountLayout;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class Result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         btnlink = findViewById(R.id.btnlink);
-        url="https://gamematearg.web.app/tienda";
+        url = "https://gamematearg.web.app/tienda";
         btnlink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,18 +49,16 @@ public class Result extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        int totalQuestions = intent.getIntExtra(Constants.TOTAL_QUESTIONS,0);
-        int coins = intent.getIntExtra(Constants.COINS,0);
-        int correct = intent.getIntExtra(Constants.CORRECT,0);
-        int wrong = intent.getIntExtra(Constants.WRONG,0);
+        int totalQuestions = intent.getIntExtra(Constants.TOTAL_QUESTIONS, 0);
+        int coins = intent.getIntExtra(Constants.COINS, 0);
+        int correct = intent.getIntExtra(Constants.CORRECT, 0);
+        int wrong = intent.getIntExtra(Constants.WRONG, 0);
         final String categoryValue = intent.getStringExtra("Category");
-
 
         txtTotalQuesion.setText(String.valueOf(totalQuestions));
         txtCoins.setText(String.valueOf(coins));
         txtCorrectQues.setText(String.valueOf(correct));
         txtWrongQues.setText(String.valueOf(wrong));
-
 
         // Mostrar código de descuento basado en el puntaje
         if (coins == 50) {
@@ -76,6 +74,12 @@ public class Result extends AppCompatActivity {
             discountLayout.setVisibility(View.GONE);
         }
 
+        DBHelper DB = new DBHelper(this);
+        SharedPreferences sp = getApplicationContext().getSharedPreferences("UserDetails", Context.MODE_PRIVATE);
+        int userId = sp.getInt("userId", -1);
+
+        DB.incrementPlayCount(userId);
+
         btPlayScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,38 +89,24 @@ public class Result extends AppCompatActivity {
             }
         });
 
-        btPlayScreen.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              Intent intent = new Intent(Result.this,PlayScreen.class);
-              startActivity(intent);
-              finish();
-          }
-      });
+        btPlayAgain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Intent intent = new Intent(Result.this, QuizActivity.class);
+                intent.putExtra("Category", categoryValue);
+                startActivity(intent);
+                finish();
 
-      btPlayAgain.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-
-
-              Intent intent = new Intent(Result.this,QuizActivity.class);
-              intent.putExtra("Category",categoryValue);
-              startActivity(intent);
-              finish();
-
-
-          }
-      });
+            }
+        });
 
     }
-
-
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent = new Intent(Result.this,PlayScreen.class);
+        Intent intent = new Intent(Result.this, PlayScreen.class);
         startActivity(intent);
         finish();
     }
