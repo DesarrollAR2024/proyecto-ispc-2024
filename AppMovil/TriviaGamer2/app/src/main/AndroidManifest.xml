@@ -16,7 +16,8 @@
         <activity android:name=".Settings" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".Result" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" android:exported="true" />
+        <activity android:name=".SignupActivity" android:exported="true" />
         <activity android:name=".PlayScreen" />
         <activity android:name=".Ranking" />
         <activity android:name=".Contacto" />
