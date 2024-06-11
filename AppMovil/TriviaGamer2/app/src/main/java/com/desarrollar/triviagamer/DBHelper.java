@@ -169,6 +169,12 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
     }
 
+    public Boolean checkEmail(String email) {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        Cursor cursor = DB.rawQuery("Select * from users where email = ?", new String[]{email});
+        return cursor.getCount() > 0;
+    }
+
     public Boolean checkusernamepassword(String username, String password) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         Cursor cursor = MyDB.rawQuery("Select * from users where username = ? and password = ?", new String[]{username, password});
