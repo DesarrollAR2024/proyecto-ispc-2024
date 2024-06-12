@@ -28,7 +28,7 @@ public class UserListActivity extends Activity {
         buttonvolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserListActivity.this, PerfilUserActivity.class);
+                Intent intent = new Intent(UserListActivity.this, AdminActivity.class);
                 startActivity(intent);
             }
         });

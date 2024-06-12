@@ -1,44 +1,61 @@
 package com.desarrollar.triviagamer;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.Toast;
 
-public class AdminActivity extends AppCompatActivity {
+import java.security.interfaces.EdECPublicKey;
+
+public class AdminActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Button btListUsers, btEditUser, btCreateUser;
+
+    public static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
 
-        Button rankingButton = findViewById(R.id.button);
-        Button editUserButton = findViewById(R.id.button3);
-        Button backToGameButton = findViewById(R.id.button4);
+        btListUsers = findViewById(R.id.buttonList);
+        btEditUser = findViewById(R.id.buttonEdit);
+        btCreateUser = findViewById(R.id.buttonNew);
 
-        rankingButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this, PerfilUserActivity.class);
-                startActivity(intent);
-            }
-        });
+        btListUsers.setOnClickListener(this);
+        btEditUser.setOnClickListener(this);
+        btCreateUser.setOnClickListener(this);
+    }
 
-        editUserButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this, PerfilUserActivity.class);
-                startActivity(intent);
-            }
-        });
+    @Override
+    public void onClick(View view) {
 
-        backToGameButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AdminActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        switch (view.getId()){
+
+            case R.id.buttonList:
+
+                Intent UserListIntent = new Intent(AdminActivity.this,UserListActivity.class);
+                startActivity(UserListIntent);
+                finish();
+                break;
+
+            case R.id.buttonEdit:
+                Intent EditUserIntent = new Intent(AdminActivity.this, EditUserActivity.class);
+                startActivity(EditUserIntent);
+                finish();
+                break;
+
+            case R.id.buttonNew:
+                Intent CreateUserIntent = new Intent(AdminActivity.this, CreateUserActivity.class);
+                startActivity(CreateUserIntent);
+                finish();
+                break;
+
+        }
+
     }
 }
