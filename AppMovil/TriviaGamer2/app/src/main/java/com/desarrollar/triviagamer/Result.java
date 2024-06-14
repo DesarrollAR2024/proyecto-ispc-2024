@@ -79,6 +79,7 @@ public class Result extends AppCompatActivity {
         int userId = sp.getInt("userId", -1);
 
         DB.incrementPlayCount(userId);
+        updateScore(DB, userId, coins);  // Actualizar el puntaje del usuario
 
         btPlayScreen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,15 +93,18 @@ public class Result extends AppCompatActivity {
         btPlayAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(Result.this, QuizActivity.class);
                 intent.putExtra("Category", categoryValue);
                 startActivity(intent);
                 finish();
-
             }
         });
+    }
 
+    private void updateScore(DBHelper db, int userId, int coins) {
+        int currentScore = db.getUserScore(userId);
+        int newScore = currentScore + coins;
+        db.updateUserScore(userId, newScore);
     }
 
     @Override
