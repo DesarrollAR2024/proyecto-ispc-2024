@@ -4,11 +4,9 @@ public class RankingUser {
     private String Name;
     private int Score;
     private int Played;
-
     private int Id;
 
     public RankingUser(String name, int score, int played, int id) {
-
         this.Name = name;
         this.Score = score;
         this.Played = played;
@@ -16,7 +14,6 @@ public class RankingUser {
     }
 
     public RankingUser() {
-
     }
 
     public int getScore() {
@@ -45,5 +42,9 @@ public class RankingUser {
 
     public int getId() {
         return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 }
