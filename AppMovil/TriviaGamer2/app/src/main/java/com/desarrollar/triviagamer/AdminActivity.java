@@ -22,9 +22,9 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
 
-        btListUsers = findViewById(R.id.button);
-        btEditUser = findViewById(R.id.button3);
-        btCreateUser = findViewById(R.id.button4);
+        btListUsers = findViewById(R.id.buttonList);
+        btEditUser = findViewById(R.id.buttonEdit);
+        btCreateUser = findViewById(R.id.buttonNew);
 
         btListUsers.setOnClickListener(this);
         btEditUser.setOnClickListener(this);
@@ -36,20 +36,20 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
 
         switch (view.getId()){
 
-            case R.id.button:
+            case R.id.buttonList:
 
                 Intent UserListIntent = new Intent(AdminActivity.this,UserListActivity.class);
                 startActivity(UserListIntent);
                 finish();
                 break;
 
-            case R.id.button3:
+            case R.id.buttonEdit:
                 Intent EditUserIntent = new Intent(AdminActivity.this, EditUserActivity.class);
                 startActivity(EditUserIntent);
                 finish();
                 break;
 
-            case R.id.button4:
+            case R.id.buttonNew:
                 Intent CreateUserIntent = new Intent(AdminActivity.this, CreateUserActivity.class);
                 startActivity(CreateUserIntent);
                 finish();
